@@ -1,39 +1,94 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Sidebar Transitions</title>
-		<meta name="description" content="Sidebar Transitions: Transition effects for off-canvas views" />
-		<meta name="keywords" content="transition, off-canvas, navigation, effect, 3d, css3, smooth" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="https://tympanus.net/Development/favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/icons.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<link rel="stylesheet" type="text/css" href="css/custom-firman.css" />
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div id="st-container" class="st-container ">
-			<nav class="st-menu st-effect-4" id="menu-4">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: Mobile-Friendly Multi-Level Menu</title>
+	<meta name="description" content="Blueprint: A basic template for a responsive multi-level sidebar menu" />
+	<meta name="keywords" content="blueprint, template, html, css, menu, sidebar, responsive, mobile-friendly" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- food icons -->
+	<link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" />
+	<!-- demo styles -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- menu styles -->
+	<link rel="stylesheet" type="text/css" href="css/component_transition.css" />
+	<link rel="stylesheet" type="text/css" href="css/component_multilevel.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom-firman.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/icons.css" />
+	<script src="js/modernizr-custom.js"></script>
+
+</head>
+
+<body>
+	<!-- Main container -->
+	<div id="st-container" class="st-container container">
+		<!-- Blueprint header -->
+		<div class="st-menu st-effect-4">
+			<header class="bp-header cf">
 				<div class="dummy-logo">
-				<img src='flower.jpg' height="50px" style="margin-top: 10px;">
-					<h2 class="icon">CAKRAWALA</h2>
+					<div class="dummy-icon foodicon foodicon--coconut"></div>
+					<h2 class="dummy-heading">Cakrawala</h2>
 				</div>
-				
-				<ul>
-					<li><a class="icon icon-settings" href="#">Settings</a></li>
-					<li><a class="icon icon-location" href="#">Maps</a></li>
-					<li><a class="icon icon-note" href="#">Report</a></li>
-					<li><a class="icon icon-truck" href="#">Asset list</a></li>
-				</ul>
+			</header>
+			<nav id="ml-menu" class="menu">
+				<div class="menu__wrap">
+					<ul data-menu="main" class="menu__level">
+						<li class="menu__item"><a class="menu__link" data-submenu="submenu-1" href="#">Settings</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Maps</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Report</a></li>
+						<li class="menu__item"><a class="menu__link" data-submenu="" href="#">Asset List</a></li>
+					</ul>
+					<!-- Submenu 1 -->
+					<ul data-menu="submenu-1" class="menu__level">
+						<li class="menu__item"><a class="menu__link" data-submenu="submenu-1-1" href="#">Device</a></li>
+						<li class="menu__item"><a class="menu__link" data-submenu="submenu-1-2" href="#">Asset</a></li>
+						<li class="menu__item"><a class="menu__link" data-submenu="submenu-1-3" href="#">Location</a></li>
+						<li class="menu__item"><a class="menu__link" data-submenu="submenu-1-4" href="#">User</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Trip</a></li>
+					</ul>
+					<!-- Submenu 1-1 -->
+					<ul data-menu="submenu-1-1" class="menu__level">
+						<li class="menu__item"><a class="menu__link" href="#">List</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Parameter</a></li>
+					</ul>
+					<!-- Submenu 1-2 -->
+					<ul data-menu="submenu-1-2" class="menu__level">
+						<li class="menu__item"><a class="menu__link" href="#">List</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Group</a></li>
+					</ul>
+					<!-- Submenu 1-3 -->
+					<ul data-menu="submenu-1-3" class="menu__level">
+						<li class="menu__item"><a class="menu__link" href="#">List</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Type</a></li>
+					</ul>
+					<!-- Submenu 1-3 -->
+					<ul data-menu="submenu-1-4" class="menu__level">
+						<li class="menu__item"><a class="menu__link" href="#">List</a></li>	
+					</ul>
+					<!-- Submenu 4 -->
+					<ul data-menu="submenu-4" class="menu__level">
+						<li class="menu__item"><a class="menu__link" href="#">Grain Mylks</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Seed Mylks</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Nut Mylks</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Nutri Drinks</a></li>
+						<li class="menu__item"><a class="menu__link" data-submenu="submenu-4-1" href="#">Selection</a></li>
+					</ul>
+					<!-- Submenu 4-1 -->
+					<ul data-menu="submenu-4-1" class="menu__level">
+						<li class="menu__item"><a class="menu__link" href="#">Nut Mylk Packs</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Amino Acid Heaven</a></li>
+						<li class="menu__item"><a class="menu__link" href="#">Allergy Free</a></li>
+					</ul>
+				</div>
 			</nav>
-			<!-- content push wrapper -->
-			<div class="st-pusher">
-				<div class="st-content" id="st-content"><!-- this is the wrapper for the content -->
+		</div>
+		<!-- content push wrapper -->
+		<div class="st-pusher">
+			<div class="st-content" id="st-content"><!-- this is the wrapper for the content -->
 					<div id="st-trigger-effects" class="kt-sticky-toolbar">
 						<button id="sticky-button" href="#" class="icon icon-arrow-left" data-effect="st-effect-4"></button>
 					</div>
@@ -44,9 +99,53 @@
 						Your asset Airbus01 is outside geofence Geo02
 					</marquee> 
 				</div>
-			</div><!-- /st-pusher -->
-		</div><!-- /st-container -->
-		<script src="js/classie.js"></script>
-		<script src="js/sidebarEffects.js"></script>
-	</body>
+		</div>
+	</div>
+	<!-- /view -->
+	<script src="js/classie.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="js/sidebarEffects.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	(function() {
+		var menuEl = document.getElementById('ml-menu'),
+			mlmenu = new MLMenu(menuEl, {
+				// breadcrumbsCtrl : true, // show breadcrumbs
+				// initialBreadcrumb : 'all', // initial breadcrumb text
+				backCtrl : false, // show back button
+				// itemsDelayInterval : 60, // delay between each menu item sliding animation
+				onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+			});
+
+		// mobile menu toggle
+		var openMenuCtrl = document.querySelector('.action--open'),
+			closeMenuCtrl = document.querySelector('.action--close');
+
+		openMenuCtrl.addEventListener('click', openMenu);
+		closeMenuCtrl.addEventListener('click', closeMenu);
+
+		function openMenu() {
+			classie.add(menuEl, 'menu--open');
+		}
+
+		function closeMenu() {
+			classie.remove(menuEl, 'menu--open');
+		}
+
+		// simulate grid content loading
+		var gridWrapper = document.querySelector('.content');
+
+		function loadDummyData(ev, itemName) {
+			ev.preventDefault();
+
+			closeMenu();
+			gridWrapper.innerHTML = '';
+			classie.add(gridWrapper, 'content--loading');
+			setTimeout(function() {
+				classie.remove(gridWrapper, 'content--loading');
+				gridWrapper.innerHTML = '<ul class="products">' + dummyData[itemName] + '<ul>';
+			}, 700);
+		}
+	})();
+	</script>
 </html>

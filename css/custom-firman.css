@@ -10,7 +10,7 @@
   /*background: #fff;*/
   }
 #st-content{
-  background-image : url('gmap.png');
+  background-image : url('../Gmap.png');
   background-size: cover;
   background-repeat : no-repeat;
 }
@@ -18,12 +18,12 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: #A2A2A1FF;
+  background: #444444;
   /*line-height: 2;*/
   /*text-align: center;*/
-  color: #333D79FF;
-  /*color:#fff;*/
-  font-size: 20px;
+  /*color: #333D79FF;*/
+  color:#fff;
+  font-size: 15px;
   font-family: sans-serif;
   font-weight: 200;
   padding-top: 10px;
