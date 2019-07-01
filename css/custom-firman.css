@@ -10,7 +10,7 @@
   /*background: #fff;*/
   }
 #st-content{
-  background-image : url('../Gmap.png');
+  background-image : url('gmap.png');
   background-size: cover;
   background-repeat : no-repeat;
 }
