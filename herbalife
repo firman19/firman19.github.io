@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	  <style>
+		 	element.style{
+			    text-align: center;
+    			background-color: #ed1010;
+    			color: rgb(251,252,254);
+    			font-size: 17px;
+		  }
+		  
+		  .table td, .table th{
+			    padding: .75rem;
+    			vertical-align: top;
+    			border-top: 1px solid #dee2e6;
+		  }
+		  
+		  td{
+			  display: table-cell;
+		  }
+		  
+		  table{
+			  border-collapse: collapse;
+		  }
+	  </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <tbody>
+    <div class="container mt-4">
+	<tr>
+		<td colspan="2" style=text-align:center;background-color:#ed1010;color:rgb(251,252,254);font-size:17px;>
+        	<strong>SURVEY IMT</strong><br>
+        </td>
+	</tr>
+      <div class="row ">
+        <div class="col">
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input class="form-control"type="text" id="nama" name="name" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="usia">Usia</label>
+            <input class="form-control" type="number" id="usia" name="usia" min="5" max="100"
+            style="max-width: 80px;"/>
+          </div>
+        </div>
+      </div>
+       <div class="row ">
+        <div class="col">
+          <div class="form-group">
+            <label for="kelamin">Kelamin</label>
+            <select class="form-control"type="text" id="kelamin"  >
+              <option value="PRIA"> PRIA </option>
+              <option value="WANITA"> WANITA </option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="tinggi_badan">Tinggi Badan</label>
+            <input class="form-control" type="number" id="tinggi_badan" min="100" max="210" style="max-width: 80px;"/>
+          </div>
+        </div>
+      </div>
+       <div class="row ">
+        <div class="col">
+          <div class="form-group">
+            <label for="ukuran" >Nomor Celana</label>
+            <select class="form-control"type="text" id="ukuran"  >
+              <option> Pilih </option>
+				<option value="70">27</option>
+				<option value="72">28</option>
+				<option value="75">29</option>
+				<option value="77">30</option>
+				<option value="80">31</option>
+				<option value="82">32</option>
+				<option value="85">33</option>
+				<option value="88">34</option>
+				<option value="90">35</option>
+				<option value="93">36</option>
+				<option value="95">37</option>
+				<option value="98">38</option>
+				<option value="100">39</option>
+				<option value="103">40</option>
+				<option value="105">41</option>
+				<option value="108">42</option>
+				<option value="110">43</option>
+				<option value="113">44</option>
+				<option value="115">45</option>
+				<option value="118">46</option>
+				<option value="120">47</option>
+				<option value="123">48</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col">
+          <div class="form-group">
+            <label for="bb" style="display:block;">Berat Badan</label>
+            <input class="form-control" type="number" id="bb" style="max-width: 80px;display: inline;" /> <span>Kg</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="lingkar" style="display:block;">Lingkar Perut</label>
+            <input class="form-control" type="number" id="lingkar" style="max-width: 80px;display: inline;"/> cm
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col text-center">
+          <button class="btn btn-danger" id="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4 mb-4">
+      <div class="text-center">
+        <h3>HASIL SURVEY</h3>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label>Index Massa Tubuh</label>
+          <input id="imt" type="text" name="" class="form-control" disabled="">
+          <input id="imt_text" type="text" name="" class="form-control" disabled="">
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <label>BB Ideal</label>
+              <input id="bb_ideal" type="" name="" class="form-control" disabled="">
+            </div>
+            <div class="col">
+              <label>BB Normal</label>
+              <input id="bb_normal" type="" name="" class="form-control" disabled="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row text-center">
+        <div class="col">
+          Perlu <input id="turun_naik" disabled="" type="" name=""> Berat Badan <input id="bb_minus" disabled type="" name="">
+        </div>
+
+      </div>
+      <div class="row mt-4">
+         <div class="col text-center">
+          <h4>RESIKO KESEHATAN</h4>
+          <p id="resiko">-</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <h4>LINGKAR PERUT</h4>
+          <p id="text_lingkar">-</p>
+        </div>
+      </div>
+      <div class="row">
+        <label>COACH: </label>
+        <input id="coach" class="form-control" type="" name="">
+        <label>CONTACT: +62</label>
+        <input id="wa_coach" class="form-control" type="" name="">
+      </div>
+      <hr>
+       <div class="row text-center">
+        <div class="col text-center">
+          <a id="kirim_wa" target="_blank" class="btn btn-success" id="reset">KIRIM DATA KE WHATSAPP</a>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+		//ENCODE URL WA
+	var dateObj = new Date();
+	var month = dateObj.getUTCMonth() + 1; //months from 1-12
+	var day = dateObj.getUTCDate();
+	var year = dateObj.getUTCFullYear();
+	cur_date = day + "/" + month + "/" + year;
+
+
+//RUMUS BB NORMAL///////////////////////////////////
+$( "#tinggi_badan" ).change(function() {
+	tinggi = $( "#tinggi_badan" ).val();
+	bb_normal = tinggi - 100;
+if(tinggi > 0 && bb_normal > 0){
+	$("#bb_normal").val(bb_normal);
+}else{
+	$("#bb_normal").val("");
+}
+$.fn.updateLink();
+});
+/////////////////////////////////////////////////// 
+
+$( "#coach,#wa_coach,#no_wa,#nama" ).change(function() {
+	$.fn.updateLink();
+});
+
+$( "#lingkar" ).change(function() {
+	$.fn.ubahLingkar();
+	$.fn.updateLink();
+});
+
+$( "#ukuran,#kelamin" ).change(function() {
+	lingkar = $( "#lingkar" ).val();
+	lingkar1 = $( "#lingkar" ).val();
+	tinggi = $( "#tinggi_badan" ).val();
+	lingkar_dari_ukuran = $( "#ukuran" ).val();
+	kelamin = $('#kelamin').val();
+	nama = $('#nama').val();
+	lingkar_text = "";
+	bb_normal = tinggi - 100;
+
+	$("#lingkar").val(lingkar_dari_ukuran);
+	lingkar = lingkar_dari_ukuran;
+
+	$.fn.ubahLingkar();
+	$.fn.updateLink();
+});//end onchange ukuran dan kelamin
+
+
+$( "#reset" ).click(function() {
+   $("#tinggi_badan,#bb,#usia,#nama,#no_wa,#ukuran,#lingkar,#imt,#bb_ideal,#bb_normal,#turun_naik,#bb_minus,#imt_text").val("");
+   $("#turun_naik").css({ "background-color": "#ffffff"});
+   $("#imt_text").css({ "background-color": "#ffffff"});
+   $("#imt").css({ "background-color": "#ffffff"});
+   $("#resiko").text("-");
+   $("#text_lingkar").text("-");
+   $("#angka_ajaib").val("");
+});
+
+//RUMUS BB IDEAL dan IMT///////////////////////////////
+$( "#tinggi_badan,#kelamin,#bb" ).change(function() {
+	tinggi = $( "#tinggi_badan" ).val();
+	kelamin = $("#kelamin").val();
+	bb = $('#bb').val();
+	usia = $('#usia').val();
+	nama = $('#nama').val();
+	if(usia < 40){
+		koef_ajaib = 500;
+	}else if(usia < 50){
+		koef_ajaib = 600;
+	}else{
+		koef_ajaib = 300;
+	}
+	
+
+ if (kelamin == "PRIA"){
+	bb_ideal = Math.floor((tinggi - 100) - (tinggi -100) * 0.05); //{tinggi badan (cm) â€“ 100} â€“ {(tinggi badan (cm) - 100) x 5%}
+	bmr = 88.362 + (13.397 * bb ) + (4.799 * tinggi) - (5.677 * usia) ; //BMR laki-laki = 88.362 + (13.397 x BB kg) + (4.799 x TB cm) â€“ (5.677 x umur tahun)
+	dci = bmr * 1.3;
+}else{
+	bb_ideal = Math.floor((tinggi - 100) - (tinggi -100) * 0.10); //{tinggi badan (cm) â€“ 100} â€“ {(tinggi badan (cm) â€“ 100) x 10%}
+	bmr = 447.593 + (9.247 * bb ) + (3.098 * tinggi) - (4.330 * usia) ;//BMR Wanita = 447.593 + (9.247 x BB kg) + (3.098 x TB cm) â€“ (4.330 x umur tahun)
+	dci = bmr * 1.25;
+}
+
+if(tinggi > 0 && bb > 0){
+	imt = bb / tinggi / tinggi * 10000; //hitung IMT
+	imt2 = "";
+	if (imt < 18.5){ imt_text = "KURANG" ; $("#imt_text,#imt").css({"background-color":"#f5c063", "color" : "#000000", "text-align" : "center"});
+	 resiko = "Masalah Pencernaan, Mudah Lemas, Stress, Osteoporosis, Gelisah, Lelah Menahun, Disfungsi Ereksi (IMT Normal = 18,5-24,9).";
+	 imt2 = " (x)";
+}
+	else if (imt >= 18.5 && imt < 24.9){ imt_text = "NORMAL"; $("#imt_text,#imt").css({"background-color":"#39f905", "color" : "#000000", "text-align" : "center"});
+	 resiko = "Normal, Dapat Mengendalikan Stress, Fit, Energi Prima, Tahan Menghadapi Penyakit, Kondisi Fisik Baik (IMT Normal = 18,5-24,9).";
+}	
+	else if (imt >= 24.9 && imt < 26.9){ imt_text = "BERESIKO"; $("#imt_text,#imt").css({"background-color":"#f9b305", "color" : "#000000", "text-align" : "center"});
+	 resiko ="Masalah Pencernaan, Masalah Sirkulasi Darah, Masalah Pembuluh Darah, Mudah Lelah (IMT Normal = 18,5-24,9).";
+	 imt2 = " (x)";
+}
+	else if (imt >= 26.9 && imt < 29.9){ imt_text = "OBESITAS 1" ; $("#imt_text,#imt").css({"background-color": "#f90505", "color" : "#ffffff", "text-align" : "center"});
+	 resiko = "Diabetes, Hipertensi, Jantung, Sendi Lutut, Stroke, Pembekuan Darah, Masalah Tulang Belakang (IMT Normal = 18,5-24,9).";
+	 imt2 = " (x)";
+	}
+	else if (imt >= 29.9){ imt_text = "OBESITAS 2" ; $("#imt_text,#imt").css({"background-color": "#f90505", "color" : "#ffffff", "text-align" : "center"});
+	resiko = "Diabetes, kanker, Angina, Serangan Jantung, Stroke, Radang Pembuluh Darah (IMT Normal = 18,5-24,9).";
+	imt2 = " (x)";
+}	
+	$("#resiko").text(resiko);
+	$.fn.bbMinus();
+	$("#angka_ajaib").val(Math.floor(angka_ajaib)).css({"text-align" : "center"});
+	$("#bb_ideal").val(bb_ideal);
+	$("#imt").val(Math.floor(imt));
+	$("#imt_text").val(imt_text);
+	$("#bb_minus").val(bb_minus);
+}
+$.fn.updateLink();
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+saran2x = "Perhatikan%20tanda%20*(X)*%20pada%20hasil%20Survei%2C%20Perbaiki%20dengan%20*Pola%20Makan%20Sehat*%20dan%20*Konsumsi%20Nutrisi*%20yang%20tepat%0A%0A";
+saran2a = "Pertahankan%20kondisi%20Anda%20dengan%20%20*Pola%20Makan%20Sehat*%20dan%20*Konsumsi%20Suplement%20Nutrisi*%20yang%20tepat%0A";
+
+$.fn.updateLink = function() {
+   wa_coach = $("#wa_coach").val();
+	coach = $("#coach").val();
+	no_wa = $("#no_wa").val();
+	no_wa ="82113311594";
+	lingkar = $( "#lingkar" ).val();
+	bb = $('#bb').val();
+	usia = $('#usia').val();
+
+	$.fn.bbMinus();
+	if(bb2.indexOf('(x)') !== -1 || imt2.indexOf('(x)') !== -1 || lingkar2.indexOf('(x)') !== -1){
+		saran2 = saran2x;
+	}else{
+		saran2 = saran2a;
+	}
+
+	encode_url = "%2ASURVEI+INDEX+MASA+TUBUH%2A%0D%0ATanggal+%3A+"+cur_date+"%0D%0ANama+%3A+%2A"+nama+"%2A%0D%0AJenis+Kelamin+%3A+"+kelamin+"%0D%0AUsia+%3A+"+usia+"+Tahun%0D%0ATinggi+Badan+%3A+"+tinggi+"+Cm%0D%0A%0D%0A%2AH+A+S+I+L+%3A%2A%0D%0A%0D%0A1%2C+Nilai+IMT+%3A+%2A"+Math.floor(imt)+imt2+"%2A%0D%0A%2A_RISIKO+KESEHATAN+%3A_%2A%0D%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%2A["+imt_text+"]*+%0A"+resiko+"%0D%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%0D%0A2.+Lingkar+Perut+%3A+%2A"+lingkar2+"%2A+++%0D%0A"+lingkar_text+"%0D%0A%0D%0A3.+Berat+Badan+%3A+%2A"+bb2+"+Kg%2A%0D%0A"+naik_turun+"+++%0D%0A%0D%0A*SARAN+%2F+KONSULTASI%2A%0D%0A"+saran+"%0A"+saran2+"%0D%0A%0D%0A%0D%0AInformasi+%2F+Konsultasi+%3A+%0D%0A+%2A"+coach+"+-+0"+wa_coach+"%2A%0D%0A%0D%0A--+atau+silahkan+balas+Pesan+ini+--";
+	default_wa_link = "https://api.whatsapp.com/send?phone=62"+no_wa+"&text=";
+
+	wa_link = default_wa_link+encode_url;
+	        $("#kirim_wa").attr("href", wa_link);
+}
+
+//Rumus BB MInus
+$.fn.bbMinus = function() {
+	if(bb > bb_ideal || bb < bb_ideal){
+		bb2 = bb+" (x)";
+	}else{
+		bb2 = bb;
+	}
+	bb_normal = tinggi - 100;
+
+	if(bb_ideal > 0){
+  		bb_minus = Math.floor(bb_ideal - bb);
+  		if(bb_minus > 3){
+  			$("#turun_naik").val("NAIK").css({ "background-color": "#ffffff","color" : "#f90505", "text-align" : "center"});
+  			angka_ajaib = dci + 600;
+  			naik_turun = "Berat%20Anda%20Kurang%20Sehat%0A*Berat%20Ideal%20%3A%20"+bb_ideal+"%20Kg*.";
+  			saran = "Anda%20harus%20*Menaikkan%20Berat%20Badan*%20sampai%20batas%20Ideal%0A";
+  		}else
+  		if(bb_minus < -3){
+  			$("#turun_naik").val("TURUN").css({"background-color": "#f90505", "color" : "#ffffff", "text-align" : "center"});
+  			angka_ajaib = dci - koef_ajaib;
+  			naik_turun = "Berat%20Anda%20Berlebih%2C%20Normal%20(TB-100)%0A*("+tinggi+"-100%20%3D%20"+bb_normal+"%20Kg)*" ;
+  			saran = "Anda%20harus%20*Menurunkan%20%20Berat%20Badan*%20sampai%20batas%20Sehat%2FNormal%0A";
+  		}else{
+  			$("#turun_naik").val("PERTAHANKAN").css({ "background-color": "#ffffff","color" : "#000000", "text-align" : "center"});
+  			angka_ajaib = dci;
+  			naik_turun = "Berat%20Anda%20Sehat%2C%20Menuju%20Ideal%0A*Berat%20Sehat%20%3A%20"+bb_normal+"%20Kg.*%0A*Berat%20Ideal%20%3A%20"+bb_ideal+"%20Kg.*";
+  			saran = "*Pertahankan%20Berat%20Badan*%20Anda%20atau%20%20*Turunkan*%20sampai%20%20Batas%20Ideal%0A";
+  		}
+	}
+}
+
+
+$.fn.ubahLingkar = function() {
+	lingkar = $("#lingkar").val();
+	lingkar2 = lingkar;
+if(kelamin == "PRIA"){
+  if(lingkar > 90 ){// laki laki OVER
+  	lingkar_text = "Lingkar perut Bapak "+nama+" berlebih, Bapak berpotensi Diabetes. Lingkar Perut Laki-laki Max. 90 cm.";
+  	lingkar2 = lingkar+"(x)";
+  }
+  if(lingkar <= 90 ){// laki laki OVER
+  	lingkar_text = "Normal Lingkar Perut Bapak "+nama+" dalam Batas Aman <90 cm";
+  }
+}//end pria
+
+	if(kelamin == "WANITA"){
+  if(lingkar > 80 ){// laki laki OVER
+  	lingkar_text = "Lingkar perut Ibu "+nama+" berlebih, Ibu berpotensi Diabetes. Lingkar Perut wanita Max. 80 cm.";
+  	lingkar2 = lingkar+"(x)";
+  }
+  if(lingkar <= 80 ){// laki laki OVER
+  	lingkar_text = "Normal Lingkar Perut Ibu "+nama+" dalam Batas Aman <80 cm";
+  }
+}//end wanita
+
+$("#text_lingkar").text(lingkar_text);
+}      
+    </script>
+		</tbody>
+  </body>
+</html>
