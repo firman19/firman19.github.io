@@ -1,0 +1,40 @@
+@font-face {
+    font-family: oneUnica;
+    src: url(font/UnicaOne-Regular.ttf);
+}
+body {
+    font-family: oneUnica !important;
+}
+.font-xs {
+    font-size: 12px;
+    font-weight: 400
+}
+.font-sm {
+    font-size: 14px;
+    font-weight: 400
+}
+.divider {
+    border: 1px solid black
+}
+.height-100 {
+    height: 100vh
+}
+.w-inherit { 
+    width: inherit
+}
+.button {
+    border: 2px solid green;
+    border-radius: 40px
+}
+.shadow-green {
+    box-shadow: 5px 5px green;
+}
+.w-max-content { 
+    width: max-content
+}
+.bg-green {
+    background-color: green;
+}
+.text-white {
+    color: white
+}
