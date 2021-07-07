@@ -1,40 +1,77 @@
 @font-face {
-    font-family: oneUnica;
-    src: url(font/UnicaOne-Regular.ttf);
+  font-family: oneUnica;
+  src: url("UnicaOne.ttf") format("truetype");
 }
 body {
-    font-family: oneUnica !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.w-fit { 
+    width: fit-content;
+}
+.h-200 {
+    height: 220px
+}
+.f-cust {
+  font-family: oneUnica;
+}
+.f-12 {
+    font-size: 12px;
+}
+.f-14 {
+    font-size: 14px;
+}
+.f-16 {
+    font-size: 16px;
+}
+.f-18 {
+    font-size: 18px;
+}
+.f-24 {
+    font-size: 24px;
+}
+.f-32 {
+    font-size: 32px;
+}
+.f-40 {
+    font-size: 40px;
+}
+.lh-32 {
+    line-height: 32px;
+}
+.lh-50 {
+    line-height: 50px;
 }
 .font-xs {
-    font-size: 12px;
-    font-weight: 400
+  font-size: 12px;
+  font-weight: 400;
 }
 .font-sm {
-    font-size: 14px;
-    font-weight: 400
+  font-size: 14px;
+  font-weight: 400;
 }
 .divider {
-    border: 1px solid black
+  border: 1px solid black;
 }
 .height-100 {
-    height: 100vh
+  height: 100vh;
 }
-.w-inherit { 
-    width: inherit
+.w-inherit {
+  width: inherit;
 }
 .button {
-    border: 2px solid green;
-    border-radius: 40px
+  border: 2px solid green;
+  border-radius: 40px;
 }
 .shadow-green {
-    box-shadow: 5px 5px green;
+  box-shadow: 5px 5px green;
 }
-.w-max-content { 
-    width: max-content
+.w-max-content {
+  width: max-content;
 }
 .bg-green {
-    background-color: green;
+  background-color: green;
 }
 .text-white {
-    color: white
+  color: white;
 }
