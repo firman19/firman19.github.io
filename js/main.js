@@ -1,4 +1,5 @@
 //clientlist
-$(".client-list").map(function() {
+// $(".client-list").map(function() {
     
-})
+// })
+function handleOpen() 
