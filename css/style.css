@@ -187,6 +187,10 @@ body {
     color: white;
 }
 
+.overflow-auto {
+    overflow: auto;
+}
+
 .d-img {
     display: none;
 }
@@ -197,6 +201,12 @@ body {
     }
     .mt-xs-5 {
         margin-top: 0;
+    }
+    .f-biggest {
+        font-size: 54px;
+    }
+    .h-70 {
+        height: 70vh;
     }
     /* .f-biggest {
         font-size: 48px
