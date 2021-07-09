@@ -41,6 +41,10 @@ body {
     z-index: 900;
 }
 
+.text-align {
+    text-align: center;
+}
+
 .border-green {
     border-bottom: 4px solid green
 }
@@ -207,6 +211,9 @@ body {
     }
     .h-70 {
         height: 70vh;
+    }
+    .text-align {
+        text-align: left;
     }
     /* .f-biggest {
         font-size: 48px
