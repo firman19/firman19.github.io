@@ -17,6 +17,10 @@ body {
     right: 20px;
 }
 
+.mt-xs-5 {
+    margin-top: 3rem;
+}
+
 .w-fit {
     width: fit-content;
 }
@@ -188,7 +192,13 @@ body {
 }
 
 @media (min-width: 768px) {
-    .f-biggest {
+    .align-self-baseline-lg {
+        align-self: baseline;
+    }
+    .mt-xs-5 {
+        margin-top: 0;
+    }
+    /* .f-biggest {
         font-size: 48px
     }
     .f-bigger {
@@ -199,5 +209,5 @@ body {
     }
     .d-img-hide {
         display: none
-    }
+    } */
 }
