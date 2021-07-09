@@ -1,113 +1,188 @@
 @font-face {
-  font-family: oneUnica;
-  src: url("UnicaOne.ttf") format("truetype");
+    font-family: oneUnica;
+    src: url("UnicaOne.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: dosisVariable;
+    src: url("Dosis-Variable.ttf") format("truetype");
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.w-fit { 
+
+.tr-pos {
+    top: 70px;
+    right: 20px;
+}
+
+.w-fit {
     width: fit-content;
 }
+
+.color-placeholder::placeholder {
+    color: #AEB6BF !important
+}
+
+.h-fill {
+    height: -webkit-fill-available !important;
+}
+
 .h-200 {
     height: 220px
 }
+
 .z-900 {
-  z-index: 900;
+    z-index: 900;
 }
+
 .border-green {
-  border-bottom: 4px solid green
+    border-bottom: 4px solid green
 }
+
 .f-cust {
-  font-family: oneUnica;
+    font-family: oneUnica;
 }
+
+.f-cust2 {
+    font-family: dosisVariable;
+}
+
 .f-12 {
     font-size: 12px;
 }
+
 .f-14 {
     font-size: 14px;
 }
+
 .f-16 {
     font-size: 16px;
 }
+
 .f-18 {
     font-size: 18px;
 }
+
 .f-24 {
     font-size: 24px;
 }
+
 .f-32 {
     font-size: 32px;
 }
+
 .f-40 {
     font-size: 40px;
 }
+
 .f-48 {
-  font-size: 48px;
+    font-size: 48px;
 }
+
 .lh-32 {
     line-height: 32px;
 }
+
 .lh-50 {
     line-height: 50px;
 }
+
 .font-xs {
-  font-size: 12px;
-  font-weight: 400;
+    font-size: 12px;
+    font-weight: 400;
 }
+
 .font-sm {
-  font-size: 14px;
-  font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
 }
+
 .divider {
-  border: 1px solid black;
+    border: 1px solid black;
 }
+
 .height-100 {
-  height: 100vh;
+    height: 100vh;
 }
+
 .w-inherit {
-  width: inherit;
+    width: inherit;
 }
+
 .fixed-position-logo {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 999
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999
 }
+
 .client-list {
-  justify-content: center;
-  display: flex;
+    justify-content: center;
+    display: flex;
 }
+
+.form-cust {
+    background: none !important;
+    border: none;
+    border-bottom: 2px solid #AEB6BF !important;
+    border-radius: 0 !important;
+}
+
+.border-y {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray
+}
+
+.list-none {
+    list-style: none;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
 .menu-box {
-  background-color: gray;
-  width: 40px;
-  height: 40px;
+    background-color: gray;
+    width: 40px;
+    height: 40px;
 }
+
+.border-radius {
+    border-radius: 20px;
+}
+
 .fixed-position-menu {
-  position: fixed;
-  right: 20px;
-  top: 20px;
-  z-index: 999
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 999
 }
+
 .buttons {
-  background-color: white;
-  border: 2px solid green;
-  border-radius: 40px;
-  box-shadow: 0 5px green;
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 40px;
+    box-shadow: 0 5px green;
 }
+
 .buttons:hover {
-  background-color: green;
-  border: 2px solid green;
-  border-radius: 40px;
-  color: white;
-  box-shadow: none;
+    background-color: green;
+    border: 2px solid green;
+    border-radius: 40px;
+    color: white;
+    box-shadow: none;
 }
+
 .w-max-content {
-  width: max-content;
+    width: max-content;
 }
+
 .bg-green {
-  background-color: green;
+    background-color: green;
 }
+
 .text-white {
-  color: white;
+    color: white;
 }
