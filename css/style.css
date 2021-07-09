@@ -49,36 +49,32 @@ body {
     font-family: dosisVariable;
 }
 
-.f-12 {
+.f-smallest {
     font-size: 12px;
 }
 
-.f-14 {
-    font-size: 14px;
-}
-
-.f-16 {
+.f-smaller {
     font-size: 16px;
 }
 
-.f-18 {
-    font-size: 18px;
+.f-small {
+    font-size: 20px;
 }
 
-.f-24 {
+.f-mid {
     font-size: 24px;
 }
 
-.f-32 {
+.f-big {
+    font-size: 28px;
+}
+
+.f-bigger {
     font-size: 32px;
 }
 
-.f-40 {
-    font-size: 40px;
-}
-
-.f-48 {
-    font-size: 48px;
+.f-biggest {
+    font-size: 36px;
 }
 
 .lh-32 {
@@ -185,4 +181,23 @@ body {
 
 .text-white {
     color: white;
+}
+
+.d-img {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .f-biggest {
+        font-size: 48px
+    }
+    .f-bigger {
+        font-size: 96px;
+    }
+    .d-img {
+        display: block;
+    }
+    .d-img-hide {
+        display: none
+    }
 }
