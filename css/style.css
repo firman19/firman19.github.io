@@ -215,6 +215,10 @@ body {
     .text-align {
         text-align: left;
     }
+    .scroll {
+        overflow: auto;
+        height: 56vh
+    }
     /* .f-biggest {
         font-size: 48px
     }
