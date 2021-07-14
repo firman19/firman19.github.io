@@ -130,6 +130,24 @@ body {
     z-index: 999
 }
 
+.h-80 {
+    height: 80vh
+}
+
+.b-0 {
+    bottom: 0
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 15px;
+}
+
 .client-list {
     justify-content: center;
     display: flex;
@@ -211,6 +229,10 @@ body {
     display: none;
 }
 
+.h-100-mb {
+    height: 100vh;
+}
+
 .green-height {
     position: absolute;
     background-color: #067018;
@@ -220,7 +242,24 @@ body {
     right: 0
 }
 
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0 !important;
+    pointer-events: none;
+}
+
+
+/* #network1:hover {
+    background-color: #067018;
+}
+
+#network1:hover>img {
+    display: none;
+} */
+
 @media (min-width: 768px) {
+    .h-100-mb {}
     .align-self-baseline-lg {
         align-self: baseline;
     }

@@ -27,10 +27,10 @@
         </div>
         <!-- Modal -->
 
-        <button type="button" class="fixed-position-menu p-0 border-0" data-toggle="modal" data-target="#exampleModal">
+        <div class="fixed-position-menu p-0 border-0" data-toggle="modal" data-target="#exampleModal">
             <div class="menu-box p-1">
-                <img src="./assets/image/etc/hamburger.png"/></div>
-        </button>
+                <img src="./assets/image/etc/hamburger.png" /></div>
+        </div>
 
         <div class="row position-relative-xs p-4 height-100 align-items-center">
             <div class="col-12 col-lg-6 pt-5 pt-lg-0">
@@ -225,7 +225,7 @@
                 </h6>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="py-4 d-flex flex-column justify-content-between text-center   ">
+                <div id="network1" class="py-4 d-flex flex-column justify-content-between text-center   ">
                     <img class="mb-3 w-fit align-self-center" src='assets/image/our_element/element1.png' />
 
                     <div class="d-flex justify-content-end">
@@ -234,7 +234,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="py-4 pb-2 d-flex flex-column justify-content-between text-center   ">
+                <div id="network2" class="py-4 pb-2 d-flex flex-column justify-content-between text-center   ">
                     <img class="mb-3 w-fit align-self-center" src='assets/image/our_element/element2.png' />
 
                     <div class="d-flex justify-content-end">
@@ -243,7 +243,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="py-4 pb-2 d-flex flex-column justify-content-between text-center   ">
+                <div id="network3" class="py-4 pb-2 d-flex flex-column justify-content-between text-center   ">
                     <img class="mb-3 w-fit align-self-center" src='assets/image/our_element/element3.png' />
 
                     <div class="d-flex justify-content-end">
@@ -252,7 +252,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="py-4 pb-2 d-flex flex-column justify-content-between text-center   ">
+                <div id="network4" class="py-4 pb-2 d-flex flex-column justify-content-between text-center   ">
                     <img class="mb-3 w-fit align-self-center" src='assets/image/our_element/element4.png' />
                     <div class="d-flex justify-content-end">
                         <h6 class="f-smallest  p-2 px-2  w-25 text-white mb-0 bg-green">Overview</h6>
@@ -260,7 +260,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="py-4 pb-2 d-flex flex-column justify-content-between text-center   ">
+                <div id="network5" class="py-4 pb-2 d-flex flex-column justify-content-between text-center   ">
                     <img class="mb-3 w-fit align-self-center" src='assets/image/our_element/element5.png' />
                     <div class="d-flex justify-content-end">
                         <h6 class="f-smallest  p-2 px-2  w-25 text-white mb-0 bg-green">Overview</h6>
@@ -268,7 +268,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="py-4 pb-2 d-flex flex-column justify-content-between text-center   ">
+                <div id="network6" class="py-4 pb-2 d-flex flex-column justify-content-between text-center   ">
                     <img class="mb-3 w-fit align-self-center" src='assets/image/our_element/element6.png' />
                     <div class="d-flex justify-content-end">
                         <h6 class="f-smallest  p-2 px-2  w-25 text-white mb-0 bg-green">Overview</h6>
@@ -415,7 +415,7 @@
                 </h6>
             </div>
         </div>
-        <div class="row p-2 ">
+        <div class="row p-2 h-100-mb mb-0 mb-lg-5">
             <div class="col-12">
                 <h5 class="f-cust f-bigger mb-3 text-center text-lg-left">THE PEOPLE'S PEOPLE</h5>
                 <div>
@@ -595,7 +595,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 mb-2">
-                <div class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center">
+                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center">
                     <div>
                         <h6 class="text-white f-cust f-big">FREELANCE</h6>
                         <h6 class="font-xs mb-0 text-white">
@@ -741,8 +741,8 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog d-flex h-fill" role="document">
             <div class="modal-content bg-dark">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true ">&times;</span>
+                <button type="button" class="close d-flex justify-content-end p-3" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true "><img src="assets/image/close.png"/></span>
                       </button>
                 <div class="modal-body text-center ">
                     <img src="assets/image/logo/logo text f4 white.png" class="position-absolute left-20" />
@@ -759,7 +759,76 @@
             </div>
         </div>
     </div>
+    <div class="modal overflow-hidden" id="modalFreelance" tabindex="-1" role="dialog" aria-labelledby="modalFreelanceLabel" aria-hidden="true">
+        <div class="modal-dialog d-flex h-fill" role="document">
+            <div class="modal-content h-80 position-absolute b-0">
+                <!-- <button type="button" class="close d-flex justify-content-end p-3" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true "><img src="assets/image/close.png"/></span>
+                      </button> -->
+                <div class="modal-header bg-green">
+                    <h5 class="f-cust text-white mb-0">ACCOUNT EXECUTIVE</h5>
 
+                </div>
+                <div class="modal-body overflow-auto">
+                    <div class="px-5 py-3">
+                        <h5 class="f-cust mb-4">Job Code: account</h5>
+                        <h6 class="f-smallest mb-2">Job Description:</h6>
+                        <ul class="mb-3">
+                            <li class="f-smallest">Responsible as liaison for creating and maintaining trust and strong relationship with clients and all stakeholders.
+                            </li>
+                            <li class="f-smallest">
+                                Build and maintain relationship with client by ensuring all client needs are met.</li>
+                            <li class="f-smallest">Assist clients in all project activities.</li>
+                            <li class="f-smallest">Provide digital project consultancy as needed for clients.</li>
+                            <li class="f-smallest">Manage all projects administration (include payment status).</li>
+                            <li class="f-smallest">Responsible account activities comply with company policy & procedure.</li>
+                            <li class="f-smallest">
+                                Responsible high quality digital products and services based on project requirements.</li>
+                            <li class="f-smallest">Responsible to brief internal team about the agreements with client.</li>
+                        </ul>
+                        <h6 class="f-smallest mb-2">Requirements:</h6>
+                        <ul class="mb-3">
+                            <li class="f-smallest">Bachelor degree from any field, communication is preferable.</li>
+                            <li class="f-smallest">
+                                Fresh graduates are welcome to apply.</li>
+                            <li class="f-smallest"> Responsible and Confident.</li>
+                            <li class="f-smallest"> Excellent communication and interpersonal skills.</li>
+                            <li class="f-smallest"> Up to date to creative and technology trends.</li>
+                        </ul>
+                        <div class="mb-3">
+                            <h6 class="f-smallest font-weight-bold">Job Location</h6>
+                            <h6 class="f-smallest font-weight-normal">Jakarta Selatan</h6>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="f-smallest font-weight-bold">Salary</h6>
+                            <h6 class="f-smallest font-weight-normal">Based on experience</h6>
+                        </div>
+                        <h6 class="f-smallest mb-3 font-weight-normal">
+                            We inviting you all digital enthusiasts to explore many brands on different industry. We have a regular skill-upgrade session in our office. If you're as passionate about the digital industry as we do, then you might just be the one we're looking for.
+                        </h6>
+                        <h6 class="f-smallest mb-4 font-weight-normal">
+                            Email david@f4elements.com or you can easily fill the form below.
+                        </h6>
+                        <form>
+                            <div class=" form-group mb-5">
+                                <input type="email " class="f-cust color-placeholder form-control f-small form-cust mb-5 pl-0" id="exampleInputName1 " aria-describedby="nameHelp " placeholder="Your Name ">
+                                <input type="email " class="f-cust color-placeholder form-control  f-small form-cust mb-5 pl-0" id="exampleInputEmail1 " aria-describedby="emailHelp " placeholder="Your Email ">
+                                <input type="email " class="f-cust color-placeholder form-control  f-small form-cust mb-4 pl-0" id="exampleInputSubject1 " aria-describedby="subjectHelp " placeholder="Your Subject ">
+                                <div class="custom-file">
+                                    <input type="file" class="btn px-3 border-radius f-cust" id="customFile">
+                                </div>
+                                <button class="btn px-3 border-radius f-cust">Upload File</button>
+                            </div>
+                            <div class="text-align">
+                                <button class="btn px-3 border-radius mb-3 w-75 font-weight-bold">SEND MESSAGE</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Modal -->
 
 
