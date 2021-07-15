@@ -253,14 +253,67 @@ ul {
     pointer-events: none;
 }
 
-
-/* #network1:hover {
-    background-color: #067018;
+.network1:hover .overlay1,
+.network2:hover .overlay2,
+.network3:hover .overlay3,
+.network4:hover .overlay4,
+.network5:hover .overlay5,
+.network6:hover .overlay6 {
+    opacity: 1;
 }
 
-#network1:hover>img {
-    display: none;
-} */
+.overlay1 {
+    background-color: #067018;
+    opacity: 0;
+    top: 0;
+    height: 100%;
+    width: 100%
+}
+
+.overlay2 {
+    background-color: #067018;
+    opacity: 0;
+    top: 0;
+    height: 100%;
+    width: 100%
+}
+
+.overlay3 {
+    background-color: #067018;
+    opacity: 0;
+    top: 0;
+    height: 100%;
+    width: 100%
+}
+
+.overlay4 {
+    background-color: #067018;
+    opacity: 0;
+    top: 0;
+    height: 100%;
+    width: 100%
+}
+
+.overlay5 {
+    background-color: #067018;
+    opacity: 0;
+    top: 0;
+    height: 100%;
+    width: 100%
+}
+
+.overlay6 {
+    background-color: #067018;
+    opacity: 0;
+    top: 0;
+    height: 100%;
+    width: 100%
+}
+
+.pos-fin {
+    bottom: 10px;
+    right: 10px
+}
 
 @media (min-width: 768px) {
     .h-100-mb {}
