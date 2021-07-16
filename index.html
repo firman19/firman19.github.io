@@ -488,9 +488,23 @@
         <div class="row p-3 py-5 ">
             <div class="col-12 col-lg-7 ">
 
-                <img class="w-inherit mt-xs-5 d-lg-none d-xl-none " src="assets/image/etc/icon.png " />
+                <div class="d-lg-none d-xl-none position-relative text-center">
+
+                    <img class="w-inherit mt-xs-5  " src="assets/image/etc/icon.png " />
+
+                    <div class="circle bg-green position-absolute pos-cust" data-toggle="modal" data-target="#modalGathering"></div>
+                    <div class="circle bg-green position-absolute pos-cust2" data-toggle="modal" data-target="#modalVirtual"></div>
+                    <div class="circle bg-green position-absolute pos-cust3" data-toggle="modal" data-target="#modalVideo"></div>
+                    <div class="circle bg-green position-absolute pos-cust4" data-toggle="modal" data-target="#modalInf"></div>
+                </div>
                 <div class="d-none d-lg-block d-xl-block ">
-                    <img class="w-inherit mt-xs-5 " src="assets/image/etc/icon_desktop.png " /></div>
+                    <img class="w-inherit mt-xs-5 " src="assets/image/etc/icon_desktop.png " />
+
+                    <div class="circle bg-green position-absolute pos-cust" data-toggle="modal" data-target="#modalGathering"></div>
+                    <div class="circle bg-green position-absolute pos-cust2" data-toggle="modal" data-target="#modalVirtual"></div>
+                    <div class="circle bg-green position-absolute pos-cust3" data-toggle="modal" data-target="#modalVideo"></div>
+                    <div class="circle bg-green position-absolute pos-cust4" data-toggle="modal" data-target="#modalInf"></div>
+                </div>
 
             </div>
             <div class="col-12 col-lg-5 py-0 py-lg-5 ">
@@ -667,7 +681,7 @@
                 <h6 class="f-smaller pb-3 text-center ">What's your element?</h6>
             </div>
             <div class="col-12 col-lg-6 mb-2 ">
-                <div class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
+                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
                     <div>
                         <h6 class="text-white f-cust f-big ">INTERNSHIP</h6>
                         <h6 class="font-xs mb-0 text-white ">
@@ -679,8 +693,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mb-2 ">
-                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
+            <div class="col-12 col-lg-6 mb-2">
+                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center">
                     <div>
                         <h6 class="text-white f-cust f-big ">FREELANCE</h6>
                         <h6 class="font-xs mb-0 text-white ">
@@ -693,7 +707,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 mb-2 ">
-                <div class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
+                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
                     <div>
                         <h6 class="text-white f-cust f-big ">DIGITAL DESIGNER</h6>
                         <h6 class="font-xs mb-0 text-white ">
@@ -706,7 +720,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 mb-2 ">
-                <div class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
+                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
                     <div>
                         <h6 class="text-white f-cust f-big ">SOCIAL MEDIA SPECIALIST</h6>
                         <h6 class="font-xs mb-0 text-white ">
@@ -719,7 +733,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 mb-2 ">
-                <div class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
+                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
                     <div>
                         <h6 class="text-white f-cust f-big ">MARKETPLACE SPECIALIST</h6>
                         <h6 class="font-xs mb-0 text-white ">
@@ -732,7 +746,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 mb-5 ">
-                <div class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
+                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
                     <div>
                         <h6 class="text-white f-cust f-big ">ART DIRECTOR</h6>
                         <h6 class="font-xs mb-0 text-white ">
@@ -830,46 +844,335 @@
 
         </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog d-flex h-fill" role="document ">
-            <div class="modal-content bg-dark ">
+    <div class="modal fade pr-0" id="modalInf" tabindex="-1" role="dialog" aria-labelledby="modalInfLabel" aria-hidden="true">
+        <div class="modal-dialog m-width-unset d-flex h-fill" role="document ">
+            <div class="modal-content overflow-auto">
+                <button type="button " class="close d-flex justify-content-end p-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true ">&times;</span>
+                      </button>
+                <div class="modal-body text-center ">
+                    <!-- <img src="assets/image/logo/logo text f4.png" class="position-absolute left-20" /> -->
+                    <div class="d-flex flex-column mb-5">
+                        <h6 class="f-big f-cust py-2 color-green">Influencers campaign, digital activation
+                        </h6>
+
+                    </div>
+                    <div class="text-center mb-4">
+                        <img class="w-mob my-4" src="/assets/image/logo/fa-guide-logo-sajiku-714-acc 1.png" />
+                        <h6 class="f-biggest color-green f-cust">SAJIKU PREMIX</h6>
+                        <hr class="w-25" />
+
+                    </div>
+                    <div class="text-left">
+                        <h6 class="f-smallest f-cust">OVERVIEW</h6>
+                        <h6 class="f-smallest font-weight-normal">Sajiku as subsidiary of ajinomoto, provide product like sauces and instant premix coating mix and seasoning We work with them to create two interesting concept For Sajiku tepung Bakwan we create a digital quiz and inviting people
+                            to create their best version of bakwan with sajiku bakwan, the best winner can share their recipe and appear on an Instagram live session with several mega KOL such as Adelia Pasha For Sajiku premix seasonings we create a Instagram
+                            filter game, where people can interact and collect the highest score and work with KOL to activate the quiz
+                        </h6>
+                        <div class="row">
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">Capability</h6>
+                                <h6 class="f-smallest font-weight-normal">Advertising</h6>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">Team</h6>
+                                <h6 class="f-smallest font-weight-normal">Interface Sunrise
+                                </h6>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">Year</h6>
+                                <h6 class="f-smallest font-weight-normal">2020</h6>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">WEBSITE</h6>
+                                <h6 class="f-smallest font-weight-normal">youtube.com/watch?time_continue=4&v=Is1ltAKGFTY&feature=emb_title</h6>
+                            </div>
+                        </div>
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 74.png" />
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 75.png" />
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 76.png" />
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 77.png" />
+                        <img width="375" class="mb-4" src="/assets/image/modal/events/image 78.png" />
+
+                        <h5 class="mb-3 f-big f-cust2 text-center">Have a project in mind? Let's make it happen. together</h5>
+                        <div class="text-center">
+                            <button class="buttons w-max-content p-3 my-2 mb-4">
+                                <h6 class="mb-0 f-smaller font-weight-bold">Let's have a chat</h6>
+                              </button>
+                        </div>
+                    </div>
+                    <!-- <div class="text-center f-smallest py-3">
+                        Scroll to explore
+                    </div>
+
+                    <div class="text-center">
+                        <a href="#scroll">
+                            <img src="assets/image/etc/arrowhead-down.png" /> </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade pr-0" id="modalVirtual" tabindex="-1" role="dialog" aria-labelledby="modalVirtualLabel" aria-hidden="true">
+        <div class="modal-dialog m-width-unset  d-flex h-fill" role="document ">
+            <div class="modal-content overflow-auto">
+                <button type="button " class="close d-flex justify-content-end p-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true ">&times;</span>
+                      </button>
+                <div class="modal-body text-center ">
+                    <!-- <img src="assets/image/logo/logo text f4.png" class="position-absolute left-20" /> -->
+                    <div class="d-flex flex-column mb-5">
+                        <h6 class="f-big f-cust py-2 color-green">VIRTUAL EVENT</h6>
+
+                    </div>
+                    <div class="text-center mb-4">
+                        <img class="w-mob my-4" src="/assets/image/our_clients/client13.png" />
+                        <h6 class="f-biggest color-green f-cust">HARRIS VIRTUAL RACE</h6>
+                        <hr class="w-25" />
+
+                    </div>
+                    <div class="text-left">
+                        <h6 class="f-smallest f-cust">OVERVIEW</h6>
+                        <h6 class="f-smallest font-weight-normal">When the pandemic Hits, Harris Day (Harris’s Hotel annual event need to change concept to virtual). We create a two in one race concept race with virtuathlon as the race platform, combining running and cycling where people all
+                            around Indonesia can compete with each other in one month virtual race
+                        </h6>
+                        <div class="row">
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">Capability</h6>
+                                <h6 class="f-smallest font-weight-normal">Advertising</h6>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">Team</h6>
+                                <h6 class="f-smallest font-weight-normal">Interface Sunrise
+                                </h6>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">Year</h6>
+                                <h6 class="f-smallest font-weight-normal">2020</h6>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">WEBSITE</h6>
+                                <h6 class="f-smallest font-weight-normal">harrishotels.com/News/HARRIS-Day-Returns-This-Year-in-A-Virtual-Race</h6>
+                            </div>
+                        </div>
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 74.png" />
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 75.png" />
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 76.png" />
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 77.png" />
+                        <img width="375" class="mb-4" src="/assets/image/modal/events/image 78.png" />
+
+                        <h5 class="mb-3 f-big f-cust2 text-center">Have a project in mind? Let's make it happen. together</h5>
+                        <div class="text-center">
+                            <button class="buttons w-max-content p-3 my-2 mb-4">
+                                <h6 class="mb-0 f-smaller font-weight-bold">Let's have a chat</h6>
+                              </button>
+                        </div>
+                    </div>
+                    <!-- <div class="text-center f-smallest py-3">
+                        Scroll to explore
+                    </div>
+
+                    <div class="text-center">
+                        <a href="#scroll">
+                            <img src="assets/image/etc/arrowhead-down.png" /> </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade pr-0" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="modalVideoLabel" aria-hidden="true">
+        <div class="modal-dialog m-width-unset  d-flex h-fill" role="document ">
+            <div class="modal-content overflow-auto">
+                <button type="button " class="close d-flex justify-content-end p-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true ">&times;</span>
+                      </button>
+                <div class="modal-body text-center ">
+                    <!-- <img src="assets/image/logo/logo text f4.png" class="position-absolute left-20" /> -->
+                    <div class="d-flex flex-column mb-5">
+                        <h6 class="f-big f-cust py-2 color-green">VIDEO & ANIMATION</h6>
+
+                    </div>
+                    <div class="text-center mb-4">
+                        <img class="w-mob my-4" src="/assets/image/logo/DANONE_LOGO 1.png" />
+                        <h6 class="f-biggest color-green f-cust">DANONE Quarter Sales Meeting Q2 2021</h6>
+                        <hr class="w-25" />
+
+                    </div>
+                    <div class="text-left">
+                        <h6 class="f-smallest f-cust">OVERVIEW</h6>
+                        <h6 class="f-smallest font-weight-normal">When the pandemic Hits, Harris Day (Harris’s Hotel annual event need to change concept to virtual). We create a two in one race concept race with virtuathlon as the race platform, combining running and cycling where people all
+                            around Indonesia can compete with each other in one month virtual race
+                        </h6>
+                        <div class="row">
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">Capability</h6>
+                                <h6 class="f-smallest font-weight-normal">Advertising</h6>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">Team</h6>
+                                <h6 class="f-smallest font-weight-normal">Interface Sunrise
+                                </h6>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">Year</h6>
+                                <h6 class="f-smallest font-weight-normal">2020</h6>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">WEBSITE</h6>
+                                <h6 class="f-smallest font-weight-normal">harrishotels.com/News/HARRIS-Day-Returns-This-Year-in-A-Virtual-Race</h6>
+                            </div>
+                        </div>
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 74.png" />
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 75.png" />
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 76.png" />
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 77.png" />
+                        <img width="375" class="mb-4" src="/assets/image/modal/events/image 78.png" />
+
+                        <h5 class="mb-3 f-big f-cust2 text-center">Have a project in mind? Let's make it happen. together</h5>
+                        <div class="text-center">
+                            <button class="buttons w-max-content p-3 my-2 mb-4">
+                                <h6 class="mb-0 f-smaller font-weight-bold">Let's have a chat</h6>
+                              </button>
+                        </div>
+                    </div>
+                    <!-- <div class="text-center f-smallest py-3">
+                        Scroll to explore
+                    </div>
+
+                    <div class="text-center">
+                        <a href="#scroll">
+                            <img src="assets/image/etc/arrowhead-down.png" /> </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade pr-0" id="modalGathering" tabindex="-1" role="dialog" aria-labelledby="modalGatheringLabel" aria-hidden="true">
+        <div class="modal-dialog m-width-unset  d-flex h-fill" role="document ">
+            <div class="modal-content overflow-auto">
+                <button type="button " class="close d-flex justify-content-end p-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true ">&times;</span>
+                      </button>
+                <div class="modal-body text-center ">
+                    <!-- <img src="assets/image/logo/logo text f4.png" class="position-absolute left-20" /> -->
+                    <div class="d-flex flex-column mb-5">
+                        <h6 class="f-big f-cust py-2 color-green"> Events, exhibitions, launching, gatherings, road shows, race event</h6>
+
+                    </div>
+                    <div class="text-center mb-4">
+                        <img class="w-mob my-4" src="/assets/image/logo/nike.png" />
+                        <h6 class="f-biggest color-green f-cust">NIKE SG vs KL 10K</h6>
+                        <hr class="w-25" />
+
+                    </div>
+                    <div class="text-left">
+                        <h6 class="f-smallest f-cust">OVERVIEW</h6>
+                        <h6 class="f-smallest font-weight-normal">Nike SG vs KL 10 K is a concept where two rival cities try to beat each other, where at the same day they try to collect KM via the nikerunning app. This event was a logistic madness where the NIKE South East Asia Fied Marketing
+                            team must work with at least 10 agencies in each city and closed down iconic routes in two busiest city Singapore and Kuala Lumpur at the same day, same minutes where the race starts starts at the same time</h6>
+                        <div class="row">
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">Capability</h6>
+                                <h6 class="f-smallest font-weight-normal">Advertising</h6>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">Team</h6>
+                                <h6 class="f-smallest font-weight-normal">Interface Sunrise
+                                </h6>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">Year</h6>
+                                <h6 class="f-smallest font-weight-normal">2020</h6>
+                            </div>
+                            <div class="col-6">
+                                <h6 class="f-cust f-smallest">WEBSITE</h6>
+                                <h6 class="f-smallest font-weight-normal">works.kinetic.com.sg/nike-10k-sg-vs-kl/</h6>
+                            </div>
+                        </div>
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 74.png" />
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 75.png" />
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 76.png" />
+                        <img width="375" class="mb-2" src="/assets/image/modal/events/image 77.png" />
+                        <img width="375" class="mb-4" src="/assets/image/modal/events/image 78.png" />
+
+                        <h5 class="mb-3 f-big f-cust2 text-center">Have a project in mind? Let's make it happen. together</h5>
+                        <div class="text-center">
+                            <button class="buttons w-max-content p-3 my-2 mb-4">
+                                <h6 class="mb-0 f-smaller font-weight-bold">Let's have a chat</h6>
+                              </button></div>
+                    </div>
+                    <!-- <div class="text-center f-smallest py-3">
+                        Scroll to explore
+                    </div>
+
+                    <div class="text-center">
+                        <a href="#scroll">
+                            <img src="assets/image/etc/arrowhead-down.png" /> </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade pr-0" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog cust m-width-unset  d-flex h-fill" role="document ">
+            <div class="modal-content bg-dark overflow-hidden">
                 <button type="button " class="close d-flex justify-content-end p-3" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true "><img src="assets/image/close.png "/></span>
                       </button>
-                <div class="modal-body text-center ">
+                <div class="modal-body overflow-hidden position-relativetext-center text-lg-right p-0 p-lg-5">
                     <img src="assets/image/logo/logo text f4 white.png " class="position-absolute left-20 " />
+                    <img src="assets/image/logo/f4 shape 1.png" class="position-absolute  left-0" />
                     <div class="d-flex flex-column ">
-                        <h6 class="f-big f-cust py-2 text-white "> ABOUT US</h6>
-                        <h6 class="f-big f-cust py-2 text-white "> OUR NETWORK</h6>
-                        <h6 class="f-big f-cust py-2 text-white "> OUR CLIENT</h6>
-                        <h6 class="f-big f-cust py-2 text-white "> OUR SERVICES</h6>
-                        <h6 class="f-big f-cust py-2 text-white "> OUR TEAM</h6>
-                        <h6 class="f-big f-cust py-2 text-white "> CAREER</h6>
-                        <h6 class="f-big f-cust py-2 text-white "> CONTACT US</h6>
+                        <h6 class="f-bigg f-cust py-2 text-white "> ABOUT US</h6>
+                        <h6 class="f-bigg f-cust py-2 text-white "> OUR NETWORK</h6>
+                        <h6 class="f-bigg f-cust py-2 text-white "> OUR CLIENT</h6>
+                        <h6 class="f-bigg f-cust py-2 text-white "> OUR SERVICES</h6>
+                        <h6 class="f-bigg f-cust py-2 text-white "> OUR TEAM</h6>
+                        <h6 class="f-bigg f-cust py-2 text-white "> CAREER</h6>
+                        <h6 class="f-bigg f-cust py-2 text-white "> CONTACT US</h6>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="modalElement" tabindex="-1" role="dialog" aria-labelledby="modalElementLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content h-fill">
-                <!-- <button type="button" class="close d-flex justify-content-end p-3" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true "><img src="assets/image/close.png"/></span>
-                      </button> -->
+    <div class="modal fade pr-0" id="modalElement" tabindex="-1" role="dialog" aria-labelledby="modalElementLabel" aria-hidden="true">
+        <div class="modal-dialog max-width-des modal-dialog-centered" role="document">
+            <div class="modal-content ">
+                <button type="button" class="close d-flex justify-content-end d-block d-sm-none" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true ">&times;</span>
+                      </button>
                 <div class="modal-body text-center p-0 ">
-                    <div class="row ">
-                        <div class="col-12">
 
-                            <div class="col-6">
-                                <img class="mb-3 w-fit align-self-center" src='assets/image/our_element/element1.png' /></div>
-                            <div class="col-6"></div>
+                    <div class="row ">
+                        <div class="col-12 col-lg-6 p-3 d-flex">
+
+                            <div class="row ">
+                                <div class="col-6 col-lg-12 order-1 order-lg-2">
+                                    <img class="mb-3 w-fit align-self-center" src='assets/image/our_element/element1.png' /></div>
+                                <div class="col-6 col-lg-12 d-flex flex-column align-self-center order-2 order-lg-1">
+                                    <h6 class="f-big f-cust">
+                                        SUNRISE
+                                    </h6>
+                                    <h6 class="d-block d-lg-none f-smaller font-weight-normal">
+                                        Community & Event Management
+                                    </h6>
+                                </div>
+                                <div class="col-lg-12 d-none d-lg-block order-lg-3">
+
+                                    <h6 class="f-smaller font-weight-normal">
+                                        Community & Event Management
+                                    </h6>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 bg-green p-5">
+                        <div class="col-12 col-lg-6 bg-green py-4 px-5">
+
+                            <!-- <button type="button" class="close d-flex justify-content-end d-none d-lg-block " data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true ">&times;</span>
+                      </button> -->
                             <div class="row">
                                 <div class="col-12 mb-3">
-                                    <h6 class="f-smaller font-weight-bold text-white text-left">We are Thinkers, Designers, and Team Players.</h6>
-                                    <h6 class="f-small f-cust text-white text-left">Strong team performance is part of our professionalism in covering product needs, creating problem-solving design and completing your project.</h6>
+                                    <h6 class="f-smaller font-weight-bold text-white text-left mb-3">We are Thinkers, Designers, and Team Players.</h6>
+                                    <h6 class="f-smaller f-cust text-white text-left">Strong team performance is part of our professionalism in covering product needs, creating problem-solving design and completing your project.</h6>
                                 </div>
                                 <div class="col-6 mb-2">
                                     <h6 class="f-bigger f-cust text-white">198</h6>
@@ -877,18 +1180,18 @@
                                 </div>
                                 <div class="col-6 mb-2">
                                     <h6 class="f-bigger f-cust text-white">1603</h6>
-                                    <h6 class="f-small text-white f-cust">EVENT CREATED</h6>
+                                    <h6 class="f-small text-white f-cust">BRAND ACTIVATION</h6>
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <h6 class="f-bigger f-cust text-white">198</h6>
-                                    <h6 class="f-small text-white f-cust">EVENT CREATED</h6>
+                                    <h6 class="f-bigger f-cust text-white">106</h6>
+                                    <h6 class="f-small text-white f-cust">HAPPY CLIENTS</h6>
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <h6 class="f-bigger f-cust text-white">1603</h6>
-                                    <h6 class="f-small text-white f-cust">EVENT CREATED</h6>
+                                    <h6 class="f-bigger f-cust text-white">506</h6>
+                                    <h6 class="f-small text-white f-cust">SOCIAL CAMPAIGNS</h6>
                                 </div>
-                                <div class="col-12 mt-4">
-                                    <h6 class="f-small text-white">Learn More <span><img src="./assets/image/etc/arrow right.png"/></span></h6>
+                                <div class="col-12 mt-4 text-left">
+                                    <h6 class="f-smaller text-white font-weight-normal">Learn More <span><img src="./assets/image/etc/arrow right.png"/></span></h6>
                                 </div>
                             </div>
                         </div>
@@ -896,84 +1199,84 @@
                 </div>
             </div>
         </div>
-        <div class="modal overflow-hidden" id="modalFreelance" tabindex="-1" role="dialog" aria-labelledby="modalFreelanceLabel" aria-hidden="true ">
-            <div class="modal-dialog d-flex h-fill " role="document ">
-                <div class="modal-content h-80 position-absolute b-0 ">
-
-                    <div class="modal-header bg-green ">
-                        <h5 class="f-cust text-white mb-0 ">ACCOUNT EXECUTIVE</h5>
-                        <button type="button" class="close d-flex justify-content-end p-3" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true "><img src="assets/image/close.png "/></span>
+    </div>
+    <div class="modal overflow-hidden pr-0" id="modalFreelance" tabindex="-1" role="dialog" aria-labelledby="modalFreelanceLabel" aria-hidden="true">
+        <div class="modal-dialog d-flex h-fill" role="document">
+            <div class="modal-content h-80 position-absolute b-0">
+                <div class="modal-header bg-green">
+                    <h5 class="f-cust text-white mb-0">ACCOUNT EXECUTIVE</h5>
+                    <button type="button" class="close d-flex justify-content-end p-3" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true "><img src="assets/image/close.png"/></span>
                       </button>
-                    </div>
-                    <div class="modal-body overflow-auto ">
-                        <div class="px-5 py-3 ">
-                            <h5 class="f-cust mb-4 ">Job Code: account</h5>
-                            <h6 class="f-smallest mb-2 ">Job Description:</h6>
-                            <ul class="mb-3 ">
-                                <li class="f-smallest ">Responsible as liaison for creating and maintaining trust and strong relationship with clients and all stakeholders.
-                                </li>
-                                <li class="f-smallest ">
-                                    Build and maintain relationship with client by ensuring all client needs are met.</li>
-                                <li class="f-smallest ">Assist clients in all project activities.</li>
-                                <li class="f-smallest ">Provide digital project consultancy as needed for clients.</li>
-                                <li class="f-smallest ">Manage all projects administration (include payment status).</li>
-                                <li class="f-smallest ">Responsible account activities comply with company policy & procedure.</li>
-                                <li class="f-smallest ">
-                                    Responsible high quality digital products and services based on project requirements.</li>
-                                <li class="f-smallest ">Responsible to brief internal team about the agreements with client.</li>
-                            </ul>
-                            <h6 class="f-smallest mb-2 ">Requirements:</h6>
-                            <ul class="mb-3 ">
-                                <li class="f-smallest ">Bachelor degree from any field, communication is preferable.</li>
-                                <li class="f-smallest ">
-                                    Fresh graduates are welcome to apply.</li>
-                                <li class="f-smallest "> Responsible and Confident.</li>
-                                <li class="f-smallest "> Excellent communication and interpersonal skills.</li>
-                                <li class="f-smallest "> Up to date to creative and technology trends.</li>
-                            </ul>
-                            <div class="mb-3 ">
-                                <h6 class="f-smallest font-weight-bold ">Job Location</h6>
-                                <h6 class="f-smallest font-weight-normal ">Jakarta Selatan</h6>
-                            </div>
-                            <div class="mb-3 ">
-                                <h6 class="f-smallest font-weight-bold ">Salary</h6>
-                                <h6 class="f-smallest font-weight-normal ">Based on experience</h6>
-                            </div>
-                            <h6 class="f-smallest mb-3 font-weight-normal ">
-                                We inviting you all digital enthusiasts to explore many brands on different industry. We have a regular skill-upgrade session in our office. If you're as passionate about the digital industry as we do, then you might just be the one we're looking for.
-                            </h6>
-                            <h6 class="f-smallest mb-4 font-weight-normal ">
-                                Email david@f4elements.com or you can easily fill the form below.
-                            </h6>
-                            <form>
-                                <div class=" form-group mb-5 ">
-                                    <input type="email " class="f-cust color-placeholder form-control f-small form-cust mb-5 pl-0 " id="exampleInputName1 " aria-describedby="nameHelp " placeholder="Your Name ">
-                                    <input type="email " class="f-cust color-placeholder form-control f-small form-cust mb-5 pl-0 " id="exampleInputEmail1 " aria-describedby="emailHelp " placeholder="Your Email ">
-                                    <input type="email " class="f-cust color-placeholder form-control f-small form-cust mb-4 pl-0 " id="exampleInputSubject1 " aria-describedby="subjectHelp " placeholder="Your Subject ">
-                                    <div class="custom-file ">
-                                        <input type="file " class="btn px-3 border-radius f-cust " id="customFile ">
-                                    </div>
-                                    <button class="btn px-3 border-radius f-cust ">Upload File</button>
-                                </div>
-                                <div class="text-align ">
-                                    <button class="btn px-3 border-radius mb-3 w-75 font-weight-bold ">SEND MESSAGE</button>
-                                </div>
-
-                            </form>
+                </div>
+                <div class="modal-body overflow-auto">
+                    <div class="px-5 py-3 ">
+                        <h5 class="f-cust mb-4 ">Job Code: account</h5>
+                        <h6 class="f-smallest mb-2 ">Job Description:</h6>
+                        <ul class="mb-3 ">
+                            <li class="f-smallest ">Responsible as liaison for creating and maintaining trust and strong relationship with clients and all stakeholders.
+                            </li>
+                            <li class="f-smallest ">
+                                Build and maintain relationship with client by ensuring all client needs are met.</li>
+                            <li class="f-smallest ">Assist clients in all project activities.</li>
+                            <li class="f-smallest ">Provide digital project consultancy as needed for clients.</li>
+                            <li class="f-smallest ">Manage all projects administration (include payment status).</li>
+                            <li class="f-smallest ">Responsible account activities comply with company policy & procedure.</li>
+                            <li class="f-smallest ">
+                                Responsible high quality digital products and services based on project requirements.</li>
+                            <li class="f-smallest ">Responsible to brief internal team about the agreements with client.</li>
+                        </ul>
+                        <h6 class="f-smallest mb-2 ">Requirements:</h6>
+                        <ul class="mb-3 ">
+                            <li class="f-smallest ">Bachelor degree from any field, communication is preferable.</li>
+                            <li class="f-smallest ">
+                                Fresh graduates are welcome to apply.</li>
+                            <li class="f-smallest "> Responsible and Confident.</li>
+                            <li class="f-smallest "> Excellent communication and interpersonal skills.</li>
+                            <li class="f-smallest "> Up to date to creative and technology trends.</li>
+                        </ul>
+                        <div class="mb-3 ">
+                            <h6 class="f-smallest font-weight-bold ">Job Location</h6>
+                            <h6 class="f-smallest font-weight-normal ">Jakarta Selatan</h6>
                         </div>
+                        <div class="mb-3 ">
+                            <h6 class="f-smallest font-weight-bold ">Salary</h6>
+                            <h6 class="f-smallest font-weight-normal ">Based on experience</h6>
+                        </div>
+                        <h6 class="f-smallest mb-3 font-weight-normal ">
+                            We inviting you all digital enthusiasts to explore many brands on different industry. We have a regular skill-upgrade session in our office. If you're as passionate about the digital industry as we do, then you might just be the one we're looking for.
+                        </h6>
+                        <h6 class="f-smallest mb-4 font-weight-normal ">
+                            Email david@f4elements.com or you can easily fill the form below.
+                        </h6>
+                        <form>
+                            <div class=" form-group mb-5 ">
+                                <input type="email " class="f-cust color-placeholder form-control f-small form-cust mb-5 pl-0 " id="exampleInputName1 " aria-describedby="nameHelp " placeholder="Your Name ">
+                                <input type="email " class="f-cust color-placeholder form-control f-small form-cust mb-5 pl-0 " id="exampleInputEmail1 " aria-describedby="emailHelp " placeholder="Your Email ">
+                                <input type="email " class="f-cust color-placeholder form-control f-small form-cust mb-4 pl-0 " id="exampleInputSubject1 " aria-describedby="subjectHelp " placeholder="Your Subject ">
+                                <div class="custom-file ">
+                                    <input type="file " class="btn px-3 border-radius f-cust " id="customFile ">
+                                </div>
+                                <button class="btn px-3 border-radius f-cust ">Upload File</button>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn px-3 border-radius mb-3 w-75 font-weight-bold ">SEND MESSAGE</button>
+                            </div>
+
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal -->
+    </div>
+    <!-- Modal -->
 
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="js/jquery-3.6.0.min.js "></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js "></script>
-        <script src="js/main.js "></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.6.0.min.js "></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/main.js "></script>
 </body>
 
 </html>
