@@ -53,6 +53,19 @@ body {
     background-color: #212936 !important;
 }
 
+.cust {
+    margin: 0.05rem auto;
+}
+
+.left-0 {
+    left: 0;
+    top: 0
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .f-cust {
     font-family: oneUnica;
 }
@@ -78,6 +91,10 @@ body {
 }
 
 .f-big {
+    font-size: 28px;
+}
+
+.f-bigg {
     font-size: 28px;
 }
 
@@ -153,11 +170,19 @@ ul {
     display: flex;
 }
 
+.m-width-unset {
+    max-width: unset;
+}
+
 .form-cust {
     background: none !important;
     border: none;
     border-bottom: 2px solid #AEB6BF !important;
     border-radius: 0 !important;
+}
+
+.w-375 {
+    width: 375px;
 }
 
 .border-y {
@@ -190,6 +215,10 @@ ul {
     z-index: 999
 }
 
+.w-mob {
+    width: 85px;
+}
+
 .buttons {
     background-color: white;
     border: 2px solid #067018;
@@ -215,6 +244,10 @@ ul {
 
 .bg-green {
     background-color: #067018;
+}
+
+.color-green {
+    color: #067018;
 }
 
 .text-white {
@@ -246,11 +279,37 @@ ul {
     right: 0
 }
 
+.circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 15px;
+}
+
+.pos-cust {
+    top: 221px;
+    left: 254px;
+}
+
+.pos-cust2 {
+    top: 136px;
+    left: 94px;
+}
+
+.pos-cust3 {
+    top: 184px;
+    left: 81px;
+}
+
+.pos-cust4 {
+    top: 80px;
+    left: 184px;
+}
+
 .modal-dialog {
     position: relative;
     width: auto;
-    margin: 0 !important;
     pointer-events: none;
+    /* max-width: unset; */
 }
 
 .network1:hover .overlay1,
@@ -310,15 +369,41 @@ ul {
     width: 100%
 }
 
+.max-width-des {
+    max-width: unset;
+}
+
 .pos-fin {
     bottom: 10px;
     right: 10px
 }
 
+.w-100 {
+    width: 100%;
+}
+
 @media (min-width: 768px) {
-    .h-100-mb {}
+    .h-100-mb {
+        height: auto;
+    }
     .align-self-baseline-lg {
         align-self: baseline;
+    }
+    .pos-cust {
+        top: 344px;
+        left: 468px;
+    }
+    .pos-cust2 {
+        top: 176px;
+        left: 151px;
+    }
+    .pos-cust3 {
+        top: 272px;
+        left: 126px;
+    }
+    .pos-cust4 {
+        top: 66px;
+        left: 329px;
     }
     .mt-xs-5 {
         margin-top: 0;
@@ -335,8 +420,8 @@ ul {
     .f-mid {
         font-size: 28px;
     }
-    .f-big {
-        font-size: 28px;
+    .f-bigg {
+        font-size: 42px;
     }
     .f-bigger {
         font-size: 32px;
@@ -364,6 +449,12 @@ ul {
         height: 100%;
         top: 0;
         right: 0
+    }
+    .max-width-des {
+        max-width: 900px;
+    }
+    .w-375 {
+        width: auto;
     }
     /* .f-biggest {
         font-size: 48px
