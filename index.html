@@ -20,10 +20,13 @@
     <![endif]-->
 </head>
 
-<body>
+<body onload="myFunction()">
+    <div class="page-loader" id="page-loader">
+        <div class="logo-wrapper">
+        </div>
+    </div>
     <div class="container">
         <div class="fixed-position-logo">
-            <img src="assets/image/logo/logo text f4.png" />
         </div>
         <!-- Modal -->
 
@@ -32,44 +35,62 @@
                 <img src="./assets/image/etc/hamburger.png" />
             </div>
         </div>
+        <!-- section one -->
+        <div class="row position-relative-xs p-4 height-100 section-one">
+            <div class="col-12 col-lg-6 pt-5 pt-lg-0 section-one__wrapper-left">
+                <div class="section-one__wrapper-logo">
 
-        <div class="row position-relative-xs p-4 height-100 align-items-center">
-            <div class="col-12 col-lg-6 pt-5 pt-lg-0">
-                <img class="py-3" src="./assets/image/logo/F4ELEMENTS.png" />
-                <div class="text-left w-75 f-biggests f-cust2">INTEGRATING VALUE DELIVERING RESULT
                 </div>
-                <hr class="my-4" />
-                <h6 class="f-smaller font-weight-light ">To every problem, there is a simplest solution</h6>
+                <div class="text-left w-75 f-biggests f-cust2 section-one__title">INTEGRATING VALUE DELIVERING RESULT
+                </div>
+                <div class="section-one__hr-wrapper">
+                    <hr class="my-4 section-one__hr"/>
+                </div>
+                <h6 class="f-smaller section-one__subtitle">To every problem, there is a simplest solution</h6>
+                
+                <!-- scroll mobile -->
                 <div class="d-block d-sm-none">
-                    <div class="text-center f-smallest py-3">
+                    <div class="text-center f-smallest section-one__scroll">
                         Scroll to explore
                     </div>
 
-                    <div class="text-center">
-                        <a href="#scroll">
-                            <img src="assets/image/etc/arrowhead-down.png" /> </a>
+                    <div class="text-center ">
+                        <a href="#section-two" class="section-one__scroll-wrapper">
+                            <img src="assets/image/etc/arrowhead-down.png" width="100%" height="100%"/> 
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 d-flex justify-content-end">
-                <img class="d-none d-sm-block w-des" src="assets/image/gif.png" />
 
+            <!-- image desktop -->
+            <div class="section-one__image-wrapper-lg">
+                <img class="w-des" src="assets/image/gif-desktop.gif" />
             </div>
-            <img class="position-absolute tr-pos d-block d-sm-none" src="assets/image/gif.png" />
+
+            <!-- image mobile -->
+            <div class="section-one__image-wrapper-mobile">
+
+            <img class="position-absolute tr-pos" src="assets/image/gif-mobile.gif" width="40%" />
+            </div>
+            <!-- scroll desktop -->
             <div class="col-lg-12 d-none d-sm-block">
-                <div class="text-center f-small py-3">
+                <div class="text-center f-small section-one__scroll">
                     Scroll to explore
                 </div>
 
                 <div class="text-center">
-                    <a href="#scroll">
-                        <img src="assets/image/etc/arrowhead-down.png" /> </a>
+                    <a href="#section-two" class="section-one__scroll-wrapper">
+                        <img src="assets/image/etc/down-arrow-lg.svg" width="100%" height="100%"/> </a>
                 </div>
             </div>
+
+            
         </div>
-        <div class="row p-4 mb-5 align-items-center">
+        
+        <!-- section two -->
+        <div class="row p-4 mb-5 align-items-center section-two" id="section-two">
             <div id="scroll" class="col-12 py-3">
-                <h1 class="text-center f-biggest f-cust">We're here with you to achieve your business goals through the integration of our element
+                <h1 class="text-center f-biggest f-cust section-two__title">We're here with you to achieve your business goals through the integration of our element
                 </h1>
             </div>
             <div class="col-12">
@@ -94,135 +115,108 @@
                         <img class="w-inherit" src="./assets/image/our_element/element6.png" alt="client-1" />
                     </div>
                     <div class="col-12">
-                        <h6 class=" text-center py-3 f-smaller"><b>F4Elements</b> is a <b>Group of Companies</b> that integrate the whole elements of below-the-line communication from <b>getting the Insight</b> of consumers and translate into <b>Strategies and Creative Ideas</b>, to connect
+                        <h6 class=" text-center py-3 f-smaller section-two__subtitle"><b>F4Elements</b> is a <b>Group of Companies</b> that integrate the whole elements of below-the-line communication from <b>getting the Insight</b> of consumers and translate into <b>Strategies and Creative Ideas</b>, to connect
                             to
                             <b>Communities and Stakeholders</b>, to develop <b>Graphics and Animated Visualization</b>, and to implement <b>Execution
                 and Production.</b> </h6>
                     </div>
                     <div class="col-12 d-flex justify-content-center mb-0 mb-lg-5">
-                        <button class="buttons w-max-content p-3 my-2 text-center">
-              <h6 class="mb-0 f-smaller font-weight-bold">Let's have a chat</h6>
-            </button>
+                        <a href="#section-ten" class="buttons w-max-content p-3 my-2 text-center section-two__btn">
+                            <h6 class="mb-0 f-smaller font-weight-bold section-two__btn-text">Let's have a chat</h6>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row align-items-center">
+        
+        <!-- section three -->
+        <div class="row align-items-center section-three">
             <div class="col-12">
-                <h6 class="text-center pt-2 pb-1 f-mid f-cust">TIMELINE
+                <h6 class="text-center pt-2 pb-1 f-mid f-cust section-three__title">TIMELINE
                 </h6>
-                <h6 class="f-smallest pb-2 text-center">More than a decade and still growing stronger</h6>
+                <h6 class="f-smallest pb-2 text-center section-three__subtitle">More than a decade and still growing stronger</h6>
 
             </div>
-            <div class="position-relative ">
-                <div class="scroll">
-                    <div class="d-flex position-relative z-900 ">
-                        <div class="col-7 offset-1 col-lg-3 offset-lg-2 py-3 d-flex flex-column align-items-center justify-content-center">
-                            <img class="mb-3 w-50 " src="./assets/image/our_element/element3.png" alt="client-1" />
-                            <div class="d-block d-sm-none">
-                                <h6 class="font-xs pb-2 text-center"> Started as an activation agency with strong aim to grow, not only by size, but also its services</h6>
+            <div class="timeline-wrapper-scroll">
+                <div class="timeline-wrapper">
+                    <div class="green-height section-three__green-line"></div>
+                    <!-- 2010 -->
+                    <div class="timeline-item">
+                        <div class="timeline-item__left">
+                            <div class="timeline-item__left-img-wrapper">
+                                <img src="./assets/image/our_element/element3.png" alt="">
                             </div>
+                            <div class="timeline-item__left-desc section-three__text-desc">Started as an activation agency with strong aim to grow, not only by size, but also its services</div>
                         </div>
-                        <div class="col-lg-5 d-none d-sm-flex align-items-center">
-                            <h6 class="font-xs pb-2 text-center"> Started as an activation agency with strong aim to grow, not only by size, but also its services</h6>
-                        </div>
-
-                        <div class="col-4 col-lg-2 d-flex align-items-center justify-content-end">
-                            <h1 class="f-biggests text-left f-cust">2010</h1>
-                        </div>
+                        <div class="timeline-item__right f-cust section-three__text-year">2010</div>
                     </div>
-                    <div class="d-flex position-relative z-900">
-                        <div class="col-7 offset-1 col-lg-3 offset-lg-2 py-3  d-flex flex-column align-items-center justify-content-center">
-                            <div class="d-flex">
-                                <img class="mb-3 w-50 " src="./assets/image/our_element/element4.png" alt="client-1" />
-                                <img class="mb-3 w-50 " src="./assets/image/our_element/element6.png" alt="client-1" />
+                    <!-- 2015 -->
+                    <div class="timeline-item">
+                        <div class="timeline-item__left">
+                            <div class="timeline-item__left-img-wrapper">
+                                <img class="" src="./assets/image/our_element/element4.png" alt="client-1" />
+                                <img class="" src="./assets/image/our_element/element6.png" alt="client-1" />
                             </div>
-
-                            <div class="d-block d-sm-none">
-                                <h6 class="f-smallest font-weight-light pb-2 text-right"> Expanded our core competencies by running a brand campaign, from strategy to execution in multi-channels. Welcoming Giza (Build & Construction) & Elements (POSM Branding) in the alliance ecosystem.</h6>
-                            </div>
+                            <div class="timeline-item__left-desc section-three__text-desc">Expanded our core competencies by running a brand campaign, from strategy to execution in multi-channels. Welcoming Giza (Build & Construction) & Elements (POSM Branding) in the alliance ecosystem.</div>
                         </div>
-                        <div class="col-lg-5 d-none d-sm-flex align-items-center">
-                            <h6 class="font-xs pb-2 text-center">Expanded our core competencies by running a brand campaign, from strategy to execution in multi-channels. Welcoming Giza (Build & Construction) & Elements (POSM Branding) in the alliance ecosystem.</h6>
-                        </div>
-                        <div class="col-4 col-lg-2 d-flex align-items-center justify-content-end">
-                            <h1 class="f-biggests text-left f-cust">2015</h1>
-                        </div>
+                        <div class="timeline-item__right f-cust section-three__text-year">2015</div>
                     </div>
-                    <div class="d-flex position-relative z-900">
-                        <div class="col-7 offset-1 col-lg-3 offset-lg-2 py-3  d-flex flex-column align-items-center justify-content-center">
-                            <div class="d-flex">
-                                <img class="mb-3 w-50 " src="./assets/image/our_element/element1.png" alt="client-1" />
-
-                                <img class="mb-3 w-50 " src="./assets/image/our_element/element5.png" alt="client-1" />
+                    <!-- 2019 -->
+                    <div class="timeline-item">
+                        <div class="timeline-item__left">
+                            <div class="timeline-item__left-img-wrapper">
+                                <img class="" src="./assets/image/our_element/element1.png" alt="client-1" width="50%"/>
+                                <img class="" src="./assets/image/our_element/element5.png" alt="client-1" width="50%"/>
                             </div>
-                            <div class="d-block d-sm-none">
-                                <h6 class="f-smallest font-weight-light pb-2 text-right">The alliance ecosystem got stronger when Sunrise (Community & Event Management) joined. Move to our building in South Jakarta mid-year. Printworks as Design and Print company, joined the party and made our network even
-                                    richer.
-                                </h6>
-                            </div>
+                            <div class="timeline-item__left-desc section-three__text-desc">The alliance ecosystem got stronger when Sunrise (Community & Event Management) joined. Move to our building in South Jakarta mid-year. Printworks as Design and Print company, joined the party and made our network even
+                                richer.</div>
                         </div>
-                        <div class="col-lg-5 d-none d-sm-flex align-items-center">
-                            <h6 class="font-xs pb-2 text-center">Expanded our core competencies by running a brand campaign, from strategy to execution in multi-channels. Welcoming Giza (Build & Construction) & Elements (POSM Branding) in the alliance ecosystem.</h6>
-                        </div>
-                        <div class="col-4 col-lg-2 d-flex align-items-center justify-content-end">
-                            <h1 class="f-biggests text-left f-cust">2019</h1>
-                        </div>
+                        <div class="timeline-item__right f-cust section-three__text-year">2019</div>
                     </div>
-                    <div class="d-flex position-relative z-900">
-                        <div class="col-7 offset-1 col-lg-3 offset-lg-2 py-3 d-flex flex-column align-items-center justify-content-center">
-                            <img class="mb-3 w-50 " src="./assets/image/our_element/element2.png" alt="client-1" />
-
-                            <div class="d-block d-sm-none">
-                                <h6 class="f-smallest font-weight-light pb-2 text-right">Providing all that’s needed for Virtual Activities: Studio Terogong supports brand and agencies from concept development to virtual execution</h6>
+                    <!-- 2020 -->
+                    <div class="timeline-item">
+                        <div class="timeline-item__left">
+                            <div class="timeline-item__left-img-wrapper">
+                                <img class="" src="./assets/image/our_element/element2.png" alt="client-1" />
                             </div>
+                            <div class="timeline-item__left-desc section-three__text-desc">Providing all that’s needed for Virtual Activities: Studio Terogong supports brand and agencies from concept development to virtual execution</div>
                         </div>
-                        <div class="col-lg-5 d-none d-sm-flex align-items-center">
-                            <h6 class="font-xs pb-2 text-center">Providing all that’s needed for Virtual Activities: Studio Terogong supports brand and agencies from concept development to virtual execution</h6>
-                        </div>
-                        <div class="col-4 col-lg-2 d-flex align-items-center justify-content-end">
-                            <h1 class="f-biggests text-left f-cust">2020</h1>
-                        </div>
+                        <div class="timeline-item__right f-cust section-three__text-year">2020</div>
                     </div>
-                    <div class="d-flex position-relative z-900">
-                        <div class="col-7 offset-1 col-lg-3 offset-lg-2 d-flex flex-column align-items-center justify-content-center">
-                            <img class="mb-3 w-50 " src="./assets/image/our_element/element3.png" alt="client-1" />
-                            <div class="d-block d-sm-none">
-                                <h6 class="f-smallest font-weight-light pb-2 text-right">
-                                    Answering high demands and opportunities in 2020, Interface officially adds new service in its portfolio: KOL & Social Media Management
-                                </h6>
+                    <!-- 2021 -->
+                    <div class="timeline-item">
+                        <div class="timeline-item__left">
+                            <div class="timeline-item__left-img-wrapper">
+                                <img class="mb-3 w-50 " src="./assets/image/our_element/element3.png" alt="client-1" />
                             </div>
+                            <div class="timeline-item__left-desc section-three__text-desc">Answering high demands and opportunities in 2020, Interface officially adds new service in its portfolio: KOL & Social Media Management</div>
                         </div>
-                        <div class="col-lg-5 d-none d-sm-flex align-items-center">
-                            <h6 class="font-xs pb-2 text-center">
-                                Answering high demands and opportunities in 2020, Interface officially adds new service in its portfolio: KOL & Social Media Management</h6>
-                        </div>
-                        <div class="col-4 col-lg-2 d-flex align-items-center justify-content-end">
-                            <h1 class="f-biggests text-left f-cust">2021</h1>
-                        </div>
+                        <div class="timeline-item__right f-cust section-three__text-year">2021</div>
                     </div>
                 </div>
-
-                <div class="green-height"></div>
             </div>
         </div>
-        <div class="row height-100 align-items-center">
+
+        <!-- section four -->
+        <div class="row align-items-center section-four">
             <div class="col-12">
-                <h6 class="f-cust f-mid text-center">SERVICES COVERAGE EXPERIENCE</h6>
-                <h6 class="f-smallest text-center font-weight-light">
+                <h6 class="f-cust f-mid text-center section-four-title">SERVICES COVERAGE EXPERIENCE</h6>
+                <h6 class="f-smallest text-center font-weight-light section-four-subtitle">
                     Where we can serve your business
                 </h6>
-                <img class="w-inherit px-4 py-3 d-block d-sm-none" src="assets/image/etc/map.png" />
-                <div class="px-4 py-3 d-none text-center d-sm-block">
-                    <img src="assets/image/etc/map-desktop.png" /></div>
-
+                <div class="section-four__globe-wrapper">
+                    <img src="assets/image/etc/globe.svg" alt="" width="100%" class="section-four__globe-img">
+                </div>
             </div>
         </div>
-        <div class="row mb-5 align-items-center">
+    </div>
+
+        <!-- section five -->
+        <div class="row mb-5 align-items-center section-five">
             <div class="col-12">
-                <h6 class="f-cust f-mid text-center">OUR NETWORKS</h6>
-                <h6 class="f-smallest text-center font-weight-light">
-                    Where we can serve your business
+                <h6 class="f-cust f-mid text-center section-five__title">OUR NETWORKS</h6>
+                <h6 class="f-smallest text-center font-weight-light section-five__subtitle">
+                    Our network can help you grow your net worth
                 </h6>
             </div>
             <div class="col-12 col-lg-4">
@@ -230,7 +224,7 @@
                     <img class="mb-3 w-fit align-self-center" src='assets/image/our_element/element1.png' />
 
                     <div class="d-flex justify-content-end">
-                        <h6 class="f-smallest  p-2 px-2  w-25 text-white mb-0 bg-green">Overview</h6>
+                        <h6 class="f-smallest  p-2 px-2  w-25 text-white mb-0 bg-green section-five__overview">Overview</h6>
                     </div>
                     <div class="overlay1 position-absolute p-4 text-center">
                         <h6 class="f-smaller mb-2 text-white font-weight-normal">
@@ -241,7 +235,7 @@
                             The company is designed to work together with all type of communities and link them to relevant stakeholders so the communities can contribute their value to public
                         </h6>
                         <div class="position-absolute pos-fin" data-toggle="modal" data-target="#modalElement">
-                            <h6 class="f-smaller text-white font-weight-normal">Find out more<span class="ml-2"><img src="./assets/image/etc/arrow right.png"></span></h6>
+                            <h6 class="f-smaller text-white font-weight-normal section-five__find-out">Find out more<span class="ml-2"><img src="./assets/image/etc/arrow right.png"></span></h6>
                         </div>
                     </div>
                 </div>
@@ -251,7 +245,7 @@
                     <img class="mb-3 w-fit align-self-center " src='assets/image/our_element/element2.png' />
 
                     <div class="d-flex justify-content-end ">
-                        <h6 class="f-smallest p-2 px-2 w-25 text-white mb-0 bg-green ">Overview</h6>
+                        <h6 class="f-smallest p-2 px-2 w-25 text-white mb-0 bg-green section-five__overview">Overview</h6>
                     </div>
                     <div class="overlay2 position-absolute p-4 text-center">
                         <h6 class="f-smaller mb-2 text-white font-weight-normal">
@@ -261,7 +255,7 @@
                         <h6 class="f-smallest text-white font-weight-normal">
                             Born out of necessity, in 2020, studio terogong’s main objective is to serve customers end-to-end. Not only provide venue and hardware tech equipments, studio terogong also offers creative ideas and design, execution, and participation management & database</h6>
                         <div class="position-absolute pos-fin">
-                            <h6 class="f-smaller text-white font-weight-normal">Find out more<span class="ml-2"><img src="./assets/image/etc/arrow right.png"></span></h6>
+                            <h6 class="f-smaller text-white font-weight-normal section-five__find-out">Find out more<span class="ml-2"><img src="./assets/image/etc/arrow right.png"></span></h6>
                         </div>
                     </div>
                 </div>
@@ -271,7 +265,7 @@
                     <img class="mb-3 w-fit align-self-center " src='assets/image/our_element/element3.png' />
 
                     <div class="d-flex justify-content-end ">
-                        <h6 class="f-smallest p-2 px-2 w-25 text-white mb-0 bg-green ">Overview</h6>
+                        <h6 class="f-smallest p-2 px-2 w-25 text-white mb-0 bg-green section-five__overview">Overview</h6>
                     </div>
 
                     <div class="overlay3 position-absolute p-4 text-center">
@@ -283,7 +277,7 @@
                             The first company in the ecosystem. established since 2010, interface has been partnering up with clients from various categories, local and global brands, not only across Indonesia but also reaching up to Singapore, Malaysia, Hong Kong and Macau for
                             brand’s marketing and sales programs.</h6>
                         <div class="position-absolute pos-fin">
-                            <h6 class="f-smaller text-white font-weight-normal">Find out more<span class="ml-2"><img src="./assets/image/etc/arrow right.png"></span></h6>
+                            <h6 class="f-smaller text-white font-weight-normal section-five__find-out">Find out more<span class="ml-2"><img src="./assets/image/etc/arrow right.png"></span></h6>
                         </div>
                     </div>
                 </div>
@@ -292,7 +286,7 @@
                 <div class="network4  position-relative py-4 d-flex flex-column justify-content-between text-center">
                     <img class="mb-3 w-fit align-self-center " src='assets/image/our_element/element4.png' />
                     <div class="d-flex justify-content-end ">
-                        <h6 class="f-smallest p-2 px-2 w-25 text-white mb-0 bg-green ">Overview</h6>
+                        <h6 class="f-smallest p-2 px-2 w-25 text-white mb-0 bg-green section-five__overview">Overview</h6>
                     </div>
                     <div class="overlay4 position-absolute p-4 text-center">
                         <h6 class="f-smaller mb-2 text-white font-weight-normal">
@@ -302,7 +296,7 @@
                         <h6 class="f-smallest text-white font-weight-normal">
                             Intended as in-house booth and backdrop workshop for interface, now giza boasts more services including design and interior and partners up with production representative across Indonesia</h6>
                         <div class="position-absolute pos-fin">
-                            <h6 class="f-smaller text-white font-weight-normal">Find out more<span class="ml-2"><img src="./assets/image/etc/arrow right.png"></span></h6>
+                            <h6 class="f-smaller text-white font-weight-normal section-five__find-out">Find out more<span class="ml-2"><img src="./assets/image/etc/arrow right.png"></span></h6>
                         </div>
                     </div>
                 </div>
@@ -311,7 +305,7 @@
                 <div class="network5 position-relative py-4 d-flex flex-column justify-content-between text-center">
                     <img class="mb-3 w-fit align-self-center " src='assets/image/our_element/element5.png' />
                     <div class="d-flex justify-content-end ">
-                        <h6 class="f-smallest p-2 px-2 w-25 text-white mb-0 bg-green ">Overview</h6>
+                        <h6 class="f-smallest p-2 px-2 w-25 text-white mb-0 bg-green section-five__overview">Overview</h6>
                     </div>
                     <div class="overlay5 position-absolute p-4 text-center">
                         <h6 class="f-smaller mb-2 text-white font-weight-normal">
@@ -322,7 +316,7 @@
                             The company is the spin-off from giza in 2019 to answer to an ever-increasing demand for POSM and product display production and installation. Like giza, element branding also have maintenance and installation people across Indonesia to serve clients
                             and partners</h6>
                         <div class="position-absolute pos-fin">
-                            <h6 class="f-smaller text-white font-weight-normal">Find out more<span class="ml-2"><img src="./assets/image/etc/arrow right.png"></span></h6>
+                            <h6 class="f-smaller text-white font-weight-normal section-five__find-out">Find out more<span class="ml-2"><img src="./assets/image/etc/arrow right.png"></span></h6>
                         </div>
                     </div>
                 </div>
@@ -331,7 +325,7 @@
                 <div class="network6 position-relative py-4 d-flex flex-column justify-content-between text-center ">
                     <img class="mb-3 w-fit align-self-center " src='assets/image/our_element/element6.png' />
                     <div class="d-flex justify-content-end ">
-                        <h6 class="f-smallest p-2 px-2 w-25 text-white mb-0 bg-green ">Overview</h6>
+                        <h6 class="f-smallest p-2 px-2 w-25 text-white mb-0 bg-green section-five__overview">Overview</h6>
                     </div>
                     <div class="overlay6 position-absolute p-4 text-center">
                         <h6 class="f-smaller mb-2 text-white font-weight-normal">
@@ -341,350 +335,213 @@
                         <h6 class="f-smallest text-white font-weight-normal">
                             Another spin-off company from giza, printworks does not only serve business partners on regular basis, but also individuals printing needs via mortar-and-brick as well as online shop</h6>
                         <div class="position-absolute pos-fin">
-                            <h6 class="f-smaller text-white font-weight-normal">Find out more<span class="ml-2"><img src="./assets/image/etc/arrow right.png"></span></h6>
+                            <h6 class="f-smaller text-white font-weight-normal section-five__find-out">Find out more<span class="ml-2"><img src="./assets/image/etc/arrow right.png"></span></h6>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-        <div class="row mt-2 mb-5 align-items-center ">
+        
+        <!-- section six -->
+        <div class="row mt-2 mb-5 align-items-center section-six">
             <div class="col-12 w-50 ">
-                <h6 class="text-center pt-2 pb-1 f-mid f-cust ">LIST OF CLIENTS
+                <h6 class="text-center pt-2 pb-1 f-mid f-cust section-six__title">LIST OF CLIENTS
                 </h6>
-                <h6 class="f-small font-weight-light pb-4 px-4 text-center ">Customer of bussiness and professionals we've partnered with</h6>
+                <h6 class="f-small font-weight-light pb-4 px-4 text-center section-six__subtitle">Customer of bussiness and professionals we've partnered with</h6>
             </div>
-            <div class="col-12 col-lg-6 order-lg-1 align-self-baseline-lg ">
-                <div class=" bg-green ">
-                    <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 ">
-                        GOVERMENT & CORPORATE
-                    </h6>
+            <div class="section-six__item-wrapper">
+                <div class="col-12 col-lg-6 order-lg-1 align-self-baseline-lg section-six__item border-green">
+                    <div class=" bg-green ">
+                        <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 section-six__client">
+                            GOVERMENT & CORPORATE
+                        </h6>
+                    </div>
+                    <div class="client-list ">
+                        <img class="py-4 " src="./assets/image/our_clients/client1.png " alt="client-1 " />
+                    </div>
                 </div>
-                <div class="client-list ">
-                    <img class="py-4 " src="./assets/image/our_clients/client1.png " alt="client-1 " />
+                <div class="col-12 col-lg-6 order-lg-2 align-self-baseline-lg section-six__item">
+                    <div class=" bg-green ">
+                        <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 section-six__client">
+                            DAIRY (+SCIENTIFIC)
+                        </h6>
+                    </div>
+                    <div class="client-list ">
+                        <img class="py-4 " src="./assets/image/our_clients/client2.png " alt="client-1 " />
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-6 order-lg-2 align-self-baseline-lg ">
-                <div class=" bg-green ">
-                    <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 ">
-                        DAIRY (+SCIENTIFIC)
-                    </h6>
+                <div class="col-12 col-lg-3 order-lg-3 align-self-baseline-lg section-six__item border-green">
+                    <div class=" bg-green ">
+                        <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 section-six__client">
+                            OIL & GAS
+                        </h6>
+                    </div>
+                    <div class="order-lg-4 client-list ">
+                        <img class="py-4 " src="./assets/image/our_clients/client3.png " alt="client-1 " />
+                    </div>
                 </div>
-                <div class="client-list ">
-                    <img class="py-4 " src="./assets/image/our_clients/client2.png " alt="client-1 " />
+                <div class="col-12 col-lg-3 order-lg-4 align-self-baseline-lg section-six__item border-green">
+                    <div class="bg-green ">
+                        <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 section-six__client">
+                            INOVATIVE PRO-BONO
+                        </h6>
+                    </div>
+                    <div class="client-list ">
+                        <img class="py-4 f-cust " src="./assets/image/our_clients/client4.png " alt="client-1 " />
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-3 order-lg-3 align-self-baseline-lg ">
-                <div class=" bg-green ">
-                    <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 ">
-                        OIL & GAS
-                    </h6>
+                <div class="col-12 col-lg-3 order-lg-5 align-self-baseline-lg section-six__item border-green">
+                    <div class="bg-green ">
+                        <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 section-six__client">
+                            TELCO
+                        </h6>
+                    </div>
+                    <div class="client-list ">
+                        <img class="py-4 " src="./assets/image/our_clients/client5.png " alt="client-1 " />
+                    </div>
                 </div>
-                <div class="order-lg-4 client-list ">
-                    <img class="py-4 " src="./assets/image/our_clients/client3.png " alt="client-1 " />
+                <div class="col-12 col-lg-3 order-lg-6 align-self-baseline-lg section-six__item">
+                    <div class="bg-green ">
+                        <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 section-six__client">
+                            TOBACCO
+                        </h6>
+                    </div>
+                    <div class="client-list ">
+                        <img class="py-4 " src="./assets/image/our_clients/client6.png " alt="client-1 " />
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-3 order-lg-4 align-self-baseline-lg ">
-                <div class="bg-green ">
-                    <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 ">
-                        INOVATIVE PRO-BONO
-                    </h6>
+                <div class="col-12 col-lg-6 order-lg-7 align-self-baseline-lg section-six__item border-green">
+                    <div class="bg-green ">
+                        <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 section-six__client">
+                            AUTOMOTIVE & TRANSPORTATION
+                        </h6>
+                    </div>
+                    <div class=" client-list ">
+                        <img class="py-4 " src="./assets/image/our_clients/client7.png " alt="client-1 " />
+                    </div>
                 </div>
-                <div class="client-list ">
-                    <img class="py-4 f-cust " src="./assets/image/our_clients/client4.png " alt="client-1 " />
+                <div class="col-12 col-lg-3 order-lg-8 align-self-baseline-lg section-six__item border-green">
+                    <div class="bg-green ">
+                        <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 section-six__client">
+                            FINANCE
+                        </h6>
+                    </div>
+                    <div class=" client-list ">
+                        <img class="py-4 " src="./assets/image/our_clients/client8.png " alt="client-1 " />
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-3 order-lg-5 align-self-baseline-lg ">
-                <div class="bg-green ">
-                    <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 ">
-                        TELCO
-                    </h6>
+                <div class="col-12 col-lg-3 order-lg-9 align-self-baseline-lg section-six__item">
+                    <div class="bg-green ">
+                        <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 section-six__client">
+                            FASHION
+                        </h6>
+                    </div>
+                    <div class="client-list ">
+                        <img class="py-4 " src="./assets/image/our_clients/client9.png " alt="client-1 " />
+                    </div>
                 </div>
-                <div class="client-list ">
-                    <img class="py-4 " src="./assets/image/our_clients/client5.png " alt="client-1 " />
+                <div class="col-12 col-lg-4 order-lg-10 align-self-baseline-lg section-six__item border-green">
+                    <div class=" bg-green ">
+                        <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 section-six__client">
+                            FOODS, BEVERAGES, SEASONINGS
+                        </h6>
+                    </div>
+                    <div class="client-list ">
+                        <img class="py-4 " src="./assets/image/our_clients/client10.png " alt="client-1 " />
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-3 order-lg-6 align-self-baseline-lg ">
-                <div class="bg-green ">
-                    <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 ">
-                        TOBACCO
-                    </h6>
+                <div class="col-12 col-lg-2 order-lg-10 align-self-baseline-lg section-six__item border-green">
+                    <div class=" bg-green ">
+                        <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 section-six__client">
+                            HOTEL
+                        </h6>
+                    </div>
+                    <div class="client-list ">
+                        <img class="py-4 " src="./assets/image/our_clients/client13.png " alt="client-1 " />
+                    </div>
                 </div>
-                <div class="client-list ">
-                    <img class="py-4 " src="./assets/image/our_clients/client6.png " alt="client-1 " />
+                <div class="col-12 col-lg-3 order-lg-11 align-self-baseline-lg section-six__item border-green">
+                    <div class="bg-green ">
+                        <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 section-six__client">
+                            PERSONAL & HEALTH CARE
+                        </h6>
+                    </div>
+                    <div class="client-list ">
+                        <img class="py-4 " src="./assets/image/our_clients/client11.png " alt="client-1 " />
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-6 order-lg-7 align-self-baseline-lg ">
-                <div class="bg-green ">
-                    <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 ">
-                        AUTOMOTIVE & TRANSPORTATION
-                    </h6>
-                </div>
-                <div class=" client-list ">
-                    <img class="py-4 " src="./assets/image/our_clients/client7.png " alt="client-1 " />
-                </div>
-            </div>
-            <div class="col-12 col-lg-3 order-lg-8 align-self-baseline-lg ">
-                <div class="bg-green ">
-                    <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 ">
-                        FINANCE
-                    </h6>
-                </div>
-                <div class=" client-list ">
-                    <img class="py-4 " src="./assets/image/our_clients/client8.png " alt="client-1 " />
-                </div>
-            </div>
-            <div class="col-12 col-lg-3 order-lg-9 align-self-baseline-lg ">
-                <div class="bg-green ">
-                    <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 ">
-                        FASHION
-                    </h6>
-                </div>
-                <div class="client-list ">
-                    <img class="py-4 " src="./assets/image/our_clients/client9.png " alt="client-1 " />
-                </div>
-            </div>
-            <div class="col-12 col-lg-4 order-lg-10 align-self-baseline-lg ">
-                <div class=" bg-green ">
-                    <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 ">
-                        FOODS, BEVERAGES, SEASONINGS
-                    </h6>
-                </div>
-                <div class="client-list ">
-                    <img class="py-4 " src="./assets/image/our_clients/client10.png " alt="client-1 " />
-                </div>
-            </div>
-            <div class="col-12 col-lg-2 order-lg-10 align-self-baseline-lg ">
-                <div class=" bg-green ">
-                    <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 ">
-                        HOTEL
-                    </h6>
-                </div>
-                <div class="client-list ">
-                    <img class="py-4 " src="./assets/image/our_clients/client13.png " alt="client-1 " />
-                </div>
-            </div>
-            <div class="col-12 col-lg-3 order-lg-11 align-self-baseline-lg ">
-                <div class="bg-green ">
-                    <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 ">
-                        PERSONAL & HEALTH CARE
-                    </h6>
-                </div>
-                <div class="client-list ">
-                    <img class="py-4 " src="./assets/image/our_clients/client11.png " alt="client-1 " />
-                </div>
-            </div>
-            <div class="col-12 col-lg-3 order-lg-12 align-self-baseline-lg ">
-                <div class="bg-green ">
-                    <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 ">
-                        ELECTRONIC & TECHNOLOGY
-                    </h6>
-                </div>
-                <div class="col-12 client-list ">
-                    <img class="py-4 " src="./assets/image/our_clients/client12.png " alt="client-1 " />
+                <div class="col-12 col-lg-3 order-lg-12 align-self-baseline-lg section-six__item">
+                    <div class="bg-green ">
+                        <h6 class="p-2 f-cust text-white text-center text-lg-right font-18 mb-0 section-six__client">
+                            ELECTRONIC & TECHNOLOGY
+                        </h6>
+                    </div>
+                    <div class="col-12 client-list ">
+                        <img class="py-4 " src="./assets/image/our_clients/client12.png " alt="client-1 " />
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row p-3 py-5 ">
-            <div class="col-12 col-lg-7 ">
 
-                <div class="d-lg-none d-xl-none position-relative text-center">
-
-                    <img class="w-inherit mt-xs-5  " src="assets/image/etc/icon.png " />
-
-                    <div class="circle bg-green position-absolute pos-cust" data-toggle="modal" data-target="#modalGathering"></div>
-                    <div class="circle bg-green position-absolute pos-cust2" data-toggle="modal" data-target="#modalVirtual"></div>
-                    <div class="circle bg-green position-absolute pos-cust3" data-toggle="modal" data-target="#modalVideo"></div>
-                    <div class="circle bg-green position-absolute pos-cust4" data-toggle="modal" data-target="#modalInf"></div>
-                </div>
-                <div class="d-none d-lg-block d-xl-block ">
-                    <img class="w-inherit mt-xs-5 " src="assets/image/etc/icon_desktop.png " />
-
-                    <div class="circle bg-green position-absolute pos-cust" data-toggle="modal" data-target="#modalGathering"></div>
-                    <div class="circle bg-green position-absolute pos-cust2" data-toggle="modal" data-target="#modalVirtual"></div>
-                    <div class="circle bg-green position-absolute pos-cust3" data-toggle="modal" data-target="#modalVideo"></div>
-                    <div class="circle bg-green position-absolute pos-cust4" data-toggle="modal" data-target="#modalInf"></div>
-                </div>
-
-            </div>
-            <div class="col-12 col-lg-5 py-0 py-lg-5 ">
-                <h6 class="py-1 px-4 f-big text-center text-lg-left f-cust ">F4Elements offer best-in-class solutions offline, online, and everything in between</h6>
-                <h6 class="py-2 px-4 f-smaller font-weight-light text-center text-lg-left ">
-                    The F4elements is a branding and design firm providing clients with breakthrough creative and a comprehensive list of services including web design and development, packaging design, print, social media and most everything in between.
-                </h6>
-            </div>
-        </div>
-        <div class="row p-2 h-100-mb mb-0 mb-lg-5 ">
-            <div class="col-12 ">
-                <h5 class="f-cust f-bigger mb-3 text-center text-lg-left ">THE PEOPLE'S PEOPLE</h5>
-                <div>
-                    <hr class="border-green w-75 " />
-                </div>
-                <div class="px-2 d-block d-sm-none ">
-                    <div class="row ">
-                        <div class="col-6 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people1.png " />
-                                <h6 class="f-small f-cust ">MURIO</h6>
-                                <h6 class="f-smallest ">Director, F4Elements</h6>
-                            </div>
-                        </div>
-                        <div class="col-6 ">
-                            <div>
-                                <img class="mt-3 mb-3 " src="./assets/image/people/people2.png " />
-                                <h6 class="f-small f-cust ">AGIEL</h6>
-                                <h6 class="f-smallest ">Director, F4Elements</h6>
-                            </div>
+    <div class="container">
+        <!-- section seven -->
+        <div class="section-seven__container">
+            <div class="section-seven">
+                <div class="section-seven__item-graph">
+                    <div class="section-seven__wrapper-graph">
+                        <div class="graph">
+                            <div class="graph-radio" id="brand-campaign" data-toggle="modal" data-target="#modalInf"></div>
+                            <div class="graph-radio" id="virtual" data-toggle="modal" data-target="#modalVirtual"></div>
+                            <div class="graph-radio" id="video-animation" data-toggle="modal" data-target="#modalVideo"></div>
+                            <div class="graph-radio" id="gathering" data-toggle="modal" data-target="#modalGathering"></div>
                         </div>
                     </div>
                 </div>
-                <div class="px-2 d-none d-sm-block mb-0 ">
-                    <div class="row ">
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people1.png " />
-                                <h6 class="f-small f-cust ">MURIO</h6>
-                                <h6 class="f-smallest ">Director, F4Elements</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people2.png " />
-                                <h6 class="f-small f-cust ">AGIEL</h6>
-                                <h6 class="f-smallest ">Director, F4Elements</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people3.png " />
-                                <h6 class="f-small f-cust ">HENRY</h6>
-                                <h6 class="f-smallest ">Director, F4Elements</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people4.png " />
-                                <h6 class="f-small f-cust ">DHONO</h6>
-                                <h6 class="f-smallest ">Director, F4Elements</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people5.png " />
-                                <h6 class="f-small f-cust ">ADIT</h6>
-                                <h6 class="f-smallest ">Strategic Planner Head, F4Elements</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people6.png " />
-                                <h6 class="f-small f-cust ">ABDAH</h6>
-                                <h6 class="f-smallest ">Design Head, Interface</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people7.png " />
-                                <h6 class="f-small f-cust ">TUTIEK</h6>
-                                <h6 class="f-smallest ">Account Head, Interface</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people8.png " />
-                                <h6 class="f-small f-cust ">SHELLY</h6>
-                                <h6 class="f-smallest ">Account Head, Interface
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people9.png " />
-                                <h6 class="f-small f-cust ">INONG</h6>
-                                <h6 class="f-smallest ">Consumer Experience Head, Interface</h6>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people10.png " />
-                                <h6 class="f-small f-cust ">BABA</h6>
-                                <h6 class="f-smallest ">Consumer Experience Head, Interface
-                                </h6>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people11.png " />
-                                <h6 class="f-small f-cust ">YENDA</h6>
-                                <h6 class="f-smallest "> Digital Head, Interface </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people12.png " />
-                                <h6 class="f-small f-cust ">MARTIN</h6>
-                                <h6 class="f-smallest ">Operation Head, Studio Terogong</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people13.png " />
-                                <h6 class="f-small f-cust ">SORAYA</h6>
-                                <h6 class="f-smallest ">General Manager, Sunrise</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people14.png " />
-                                <h6 class="f-small f-cust ">ADIT</h6>
-                                <h6 class="f-smallest ">Operation Head, Sunrise</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people15.png " />
-                                <h6 class="f-small f-cust ">FARRAH</h6>
-                                <h6 class="f-smallest ">HR Business Partner, F4Elements</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people16.png " />
-                                <h6 class="f-small f-cust ">IDRIS</h6>
-                                <h6 class="f-smallest ">Production Head, Giza</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people17.png " />
-                                <h6 class="f-small f-cust ">LUSI</h6>
-                                <h6 class="f-smallest ">Sales & Operation Lead, Printworks</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 mb-3 ">
-                            <div>
-                                <img class="mb-3 " src="./assets/image/people/people18.png " />
-                                <h6 class="f-small f-cust ">ITA</h6>
-                                <h6 class="f-smallest ">Sales Lead, Elements Branding</h6>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="section-seven__item-text">
+                    <h6 class="py-1 px-4 f-big text-center text-lg-left f-cust section-seven__title">F4Elements offer best-in-class solutions offline, online, and everything in between</h6>
+                    <h6 class="py-2 px-4 f-smaller font-weight-light text-center text-lg-left section-seven__subtitle">
+                        The F4elements is a branding and design firm providing clients with breakthrough creative and a comprehensive list of services including web design and development, packaging design, print, social media and most everything in between.
+                    </h6>
                 </div>
             </div>
         </div>
-        <div class="row p-2 mb-5 ">
+
+        <!-- section eight -->
+        <div class="row p-2 mb-0 mb-lg-5 section-eight">
             <div class="col-12 ">
-                <h6 class="py-1 f-big text-center f-cust ">CAREER</h6>
-                <h6 class="f-smaller pb-3 text-center ">What's your element?</h6>
+                <h5 class="f-cust f-bigger mb-3 text-center text-lg-left section-eight__title">THE PEOPLE'S PEOPLE</h5>
+                <div class="section-eight__line">
+                    <div class="section-eight__line-green"></div>
+                </div>
+                <div class="section-eight__people-wrapper">
+                    <div class="people-item">
+                        <div class="poeple-img__wrapper">
+                            <img src="./assets/image/people/people1.png " alt="">
+                        </div>
+                        <div class="f-cust people-name section-eight__name">
+                            MURIO
+                        </div>
+                        <div class="f-smallest people-position section-eight__position">
+                            Director, F4Elements
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- section nine -->
+        <div class="row p-2 mb-5 section-nine">
+            <div class="col-12 ">
+                <h6 class="text-center f-cust section-nine__title">CAREER</h6>
+                <h6 class="text-center section-nine__subtitle">What's your element?</h6>
             </div>
             <div class="col-12 col-lg-6 mb-2 ">
-                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
+                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center section-nine__career-item">
                     <div>
-                        <h6 class="text-white f-cust f-big ">INTERNSHIP</h6>
-                        <h6 class="font-xs mb-0 text-white ">
+                        <h6 class="text-white f-cust f-big section-nine__job-position">INTERNSHIP</h6>
+                        <h6 class="font-xs mb-0 text-white section-nine__see-details">
                             See details
                         </h6>
                     </div>
@@ -694,10 +551,10 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 mb-2">
-                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center">
+                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center section-nine__career-item">
                     <div>
-                        <h6 class="text-white f-cust f-big ">FREELANCE</h6>
-                        <h6 class="font-xs mb-0 text-white ">
+                        <h6 class="text-white f-cust f-big section-nine__job-position">FREELANCE</h6>
+                        <h6 class="font-xs mb-0 text-white section-nine__see-details">
                             See details
                         </h6>
                     </div>
@@ -707,10 +564,10 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 mb-2 ">
-                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
+                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center section-nine__career-item">
                     <div>
-                        <h6 class="text-white f-cust f-big ">DIGITAL DESIGNER</h6>
-                        <h6 class="font-xs mb-0 text-white ">
+                        <h6 class="text-white f-cust f-big section-nine__job-position">DIGITAL DESIGNER</h6>
+                        <h6 class="font-xs mb-0 text-white section-nine__see-details">
                             See details
                         </h6>
                     </div>
@@ -720,10 +577,10 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 mb-2 ">
-                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
+                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center section-nine__career-item">
                     <div>
-                        <h6 class="text-white f-cust f-big ">SOCIAL MEDIA SPECIALIST</h6>
-                        <h6 class="font-xs mb-0 text-white ">
+                        <h6 class="text-white f-cust f-big section-nine__job-position">SOCIAL MEDIA SPECIALIST</h6>
+                        <h6 class="font-xs mb-0 text-white section-nine__see-details">
                             See details
                         </h6>
                     </div>
@@ -733,10 +590,10 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 mb-2 ">
-                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
+                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center section-nine__career-item">
                     <div>
-                        <h6 class="text-white f-cust f-big ">MARKETPLACE SPECIALIST</h6>
-                        <h6 class="font-xs mb-0 text-white ">
+                        <h6 class="text-white f-cust f-big section-nine__job-position">MARKETPLACE SPECIALIST</h6>
+                        <h6 class="font-xs mb-0 text-white section-nine__see-details">
                             See details
                         </h6>
                     </div>
@@ -746,10 +603,10 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 mb-5 ">
-                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center ">
+                <div data-toggle="modal" data-target="#modalFreelance" class="bg-green py-4 pt-lg-4 pb-lg-5 px-3 px-lg-4 mb-2 d-flex justify-content-between align-items-center section-nine__career-item">
                     <div>
-                        <h6 class="text-white f-cust f-big ">ART DIRECTOR</h6>
-                        <h6 class="font-xs mb-0 text-white ">
+                        <h6 class="text-white f-cust f-big section-nine__job-position">ART DIRECTOR</h6>
+                        <h6 class="font-xs mb-0 text-white section-nine__see-details">
                             See details
                         </h6>
                     </div>
@@ -762,27 +619,37 @@
 
     </div>
     </div>
-    <div class="bg-green ">
+    
+    <!-- section ten -->
+    <div class="bg-green section-ten" id="section-ten">
         <div class=" container p-5 mt-3 ">
-            <h5 class="mb-4 f-bigger f-cust2 text-white ">Have a project in mind? Let's make it happen. together</h5>
+            <h5 class="mb-4 f-bigger f-cust2 text-white section-ten__title">Have a project in mind? Let's make it happen, together</h5>
             <div class="row ">
                 <div class="col-12 col-lg-6 ">
                     <form>
                         <div class=" form-group mb-5 ">
                             <div class="row ">
                                 <div class="col-12 col-lg-6 ">
-                                    <input type="text " class="f-cust color-placeholder form-control f-small form-cust mb-5 pl-0 " id="exampleInputName1 " aria-describedby="nameHelp " placeholder="Your Name ">
+                                    <input type="text " class="f-cust color-placeholder form-control f-small form-cust pl-0 section-ten__input-text" id="exampleInputName1 " aria-describedby="nameHelp " placeholder="YOUR NAME* ">
                                 </div>
-                                <div class="col-12 col-lg-6 "><input type="email " class="f-cust color-placeholder form-control f-small form-cust mb-5 pl-0 " id="exampleInputEmail1 " aria-describedby="emailHelp " placeholder="Your Email ">
+                                <div class="col-12 col-lg-6 ">
+                                    <input type="email " class="f-cust color-placeholder form-control f-small form-cust pl-0 section-ten__input-text" id="exampleInputEmail1 " aria-describedby="emailHelp " placeholder="YOUR EMAIL* ">
                                 </div>
-                                <div class="col-12 col-lg-6 "><input type="text " class="f-cust color-placeholder form-control f-small form-cust mb-4 pl-0 " id="exampleInputSubject1 " aria-describedby="subjectHelp " placeholder="Your Subject ">
+                                <div class="col-12 col-lg-6 ">
+                                    <input type="text " class="f-cust color-placeholder form-control f-small form-cust pl-0 section-ten__input-text" id="exampleInputSubject1 " aria-describedby="subjectHelp " placeholder="YOUR SUBJECT* ">
                                 </div>
-                                <div class="col-12 col-lg-6 "><button class="btn px-3 border-radius f-cust ">Upload File</button>
+                                <div class="col-12 col-lg-6 ">
+                                    <button class="btn px-3 border-radius f-cust section-ten__upload-button">Upload File</button>
+                                    <div class="text-white">*less than 1.5 Mb</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="text-align ">
-                            <button class="btn px-3 border-radius mb-3 w-75 font-weight-bold ">SEND MESSAGE</button>
+                        <div class="text-align">
+                            <button class="btn px-3 border-radius font-weight-bold section-ten__btn-send-message">
+                                <div class="section-ten__text-send-message">
+                                    SEND MESSAGE
+                                </div>
+                            </button>
                         </div>
 
                     </form>
@@ -790,35 +657,47 @@
                 <div class="col-12 col-lg-6 ">
                     <div class="row ">
                         <div class="col-6 mb-2 ">
-                            <div class="f-cust f-mid text-white mb-2 ">Pages</div>
+                            <div class="f-cust f-mid text-white section-ten__text-pages">Pages</div>
                             <ul class="p-0 list-none text-white ">
-                                <li>
-                                    About Us
+                                <li class="section-ten__text-pages-list">
+                                    <a href="#">
+                                        About Us
+                                    </a>
                                 </li>
-                                <li>
-                                    Our Companies
+                                <li class="section-ten__text-pages-list">
+                                    <a href="#">
+                                        Our Companies
+                                    </a>
                                 </li>
-                                <li>
-                                    Our Clients
+                                <li class="section-ten__text-pages-list">
+                                    <a href="#">
+                                        Our Clients
+                                    </a>
                                 </li>
-                                <li>
-                                    Our Services
+                                <li class="section-ten__text-pages-list">
+                                    <a href="#">
+                                        Our Services
+                                    </a>
                                 </li>
-                                <li>
-                                    Our Team
+                                <li class="section-ten__text-pages-list">
+                                    <a href="#">
+                                        Our Team
+                                    </a>
                                 </li>
-                                <li>
-                                    Contact
+                                <li class="section-ten__text-pages-list">
+                                    <a href="#">
+                                        Contact
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-6 mb-2 ">
-                            <div class="f-cust f-mid text-white mb-2 ">Location</div>
-                            <div class="text-white mb-2 ">F4Elements Jl. Jaha No.88, Cilandak Timur, Pasar Minggu, Jakarta Selatan,12560</div>
+                            <div class="f-cust f-mid text-white section-ten__text-pages">Location</div>
+                            <div class="text-white mb-2 section-ten__text-pages-list">F4Elements </br> Jl. Jaha No.88, Cilandak Timur, Pasar Minggu, Jakarta Selatan,12560</div>
                         </div>
                         <div class="col-12 mb-4 ">
-                            <div class="f-cust f-mid text-white ">Inquiries</div>
-                            <div class="text-white ">david@f4elements.com</div>
+                            <div class="f-cust f-mid text-white section-ten__text-pages">Inquiries</div>
+                            <a class="text-white section-ten__text-pages-list" href="mailto:david@f4elements.com">david@f4elements.com</a>
                         </div>
 
                         <!-- <div class="col-12 mb-4 ">
@@ -829,14 +708,25 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-12 ">
-                    <div class="d-flex justify-content-evenly py-3 border-y mb-3 ">
-                        <img src="assets/image/social_media/Vector (1).png " />
-                        <img src="assets/image/social_media/Vector (3).png " />
-                        <img src="assets/image/social_media/Vector (4).png " />
-                        <img src="assets/image/social_media/Instagram.png " />
+                    <div class="d-flex justify-content-between py-3 mb-3 section-ten__socials-wrapper">
+                        <a href="#" class="d-block section-ten__social-wrapper">
+                            <img src="assets/image/social_media/facebook.svg" alt="" srcset="">
+                        </a>
+                        <a href="#" class="d-block section-ten__social-wrapper">
+                            <img src="assets/image/social_media/twitter.svg" alt="" srcset="">
+                        </a>
+                        <a href="#" class="d-block section-ten__social-wrapper">
+                            <img src="assets/image/social_media/instagram.svg" alt="" srcset="">
+                        </a>
+                        <a href="#" class="d-block section-ten__social-wrapper">
+                            <img src="assets/image/social_media/youtube.svg" alt="" srcset="">
+                        </a>
+                        <a href="#" class="d-block section-ten__social-wrapper">
+                            <img src="assets/image/social_media/linkedin.svg" alt="" srcset="">
+                        </a>
                     </div>
                 </div>
-                <div class="text-center text-white ">
+                <div class="text-center text-white section-ten__copyright">
                     Ⓒ 2021 F4ELEMENTS INDONESIA MEDIA CO. LTD. ALL RIGHTS RESERVED.
                 </div>
             </div>
