@@ -407,6 +407,10 @@ a:hover {
     text-decoration: none;
 }
 
+.max-width-job {
+    max-width: 800px;
+}
+
 @media (min-width: 768px) {
     .h-100-mb {
         height: auto;
