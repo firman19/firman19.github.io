@@ -96,7 +96,7 @@ const people = [
 people.forEach(e => {
     const html = `<div class="people-item">
         <div class="poeple-img__wrapper">
-            <img src="${e.img}" alt="">
+            <img src="${e.img}" alt="" class="lazyload">
         </div>
         <div class="f-cust people-name section-eight__name">
             ${e.name}
